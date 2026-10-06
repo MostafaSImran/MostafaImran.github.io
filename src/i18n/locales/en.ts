@@ -1,0 +1,38 @@
+import type { Content } from '../types';
+import {
+  siteConfig,
+  navConfig,
+  heroConfig,
+  narrativeTextConfig,
+  cardStackConfig,
+  breathSectionConfig,
+  zigZagGridConfig,
+  scaniaConfig,
+  productConfig,
+  soundpodConfig,
+  phdPitchConfig,
+  servicesConfig,
+  credentialsConfig,
+  researchConfig,
+  publicationsConfig,
+  footerConfig,
+} from '../../config';
+
+export const en: Content = {
+  site: siteConfig,
+  nav: navConfig,
+  hero: heroConfig,
+  narrative: narrativeTextConfig,
+  cards: cardStackConfig,
+  breath: breathSectionConfig,
+  zigzag: zigZagGridConfig,
+  scania: scaniaConfig,
+  product: productConfig,
+  soundpod: soundpodConfig,
+  phd: phdPitchConfig,
+  services: servicesConfig,
+  credentials: credentialsConfig,
+  research: researchConfig,
+  publications: publicationsConfig,
+  footer: footerConfig,
+};
