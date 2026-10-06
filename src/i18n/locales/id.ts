@@ -452,7 +452,7 @@ export const id: Content = {
     ],
     socialLabel: 'Terhubung',
     socials: [],
-    logoText: 'Mostafa Shawkat Imran',
+    logoText: 'SUN MOON ECOSYSTEM',
     copyright: '© 2026 Mostafa Shawkat Imran. Seluruh hak cipta dilindungi.',
     links: [
       { label: 'LinkedIn', href: 'https://www.linkedin.com/in/mostafa-shawkat-imran-244039b5' },

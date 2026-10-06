@@ -292,7 +292,7 @@ const Footer = () => {
           >
             <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
               <svg
-                viewBox="0 0 400 80"
+                viewBox="0 0 1200 150"
                 className="w-full max-w-4xl mx-auto h-auto opacity-20"
                 fill="currentColor"
               >
@@ -303,7 +303,7 @@ const Footer = () => {
                   textAnchor="middle"
                   className="font-display"
                   style={{
-                    fontSize: '72px',
+                    fontSize: '84px',
                     fontFamily: 'Cormorant Garamond, serif',
                     letterSpacing: '0.05em'
                   }}

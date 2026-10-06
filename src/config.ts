@@ -764,7 +764,7 @@ export const footerConfig: FooterConfig = {
   ],
   socialLabel: "Connect",
   socials: [],
-  logoText: "M. SHAWKAT IMRAN",
+  logoText: "SUN MOON ECOSYSTEM",
   copyright: "© 2026 Mostafa Shawkat Imran. All rights reserved.",
   links: [
     { label: "LinkedIn", href: "https://www.linkedin.com/in/mostafa-shawkat-imran-244039b5" },

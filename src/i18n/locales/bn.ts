@@ -452,7 +452,7 @@ export const bn: Content = {
     ],
     socialLabel: 'সংযোগ',
     socials: [],
-    logoText: 'মোস্তফা শওকত ইমরান',
+    logoText: 'SUN MOON ECOSYSTEM',
     copyright: '© ২০২৬ মোস্তফা শওকত ইমরান। সর্বস্বত্ব সংরক্ষিত।',
     links: [
       { label: 'LinkedIn', href: 'https://www.linkedin.com/in/mostafa-shawkat-imran-244039b5' },
