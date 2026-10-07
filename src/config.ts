@@ -14,6 +14,7 @@ export const navConfig: NavConfig = {
   items: [
     { label: "About", target: "about" },
     { label: "Services", target: "services" },
+    { label: "Projects", target: "projects" },
     { label: "Products", target: "products" },
     { label: "Research", target: "research" },
     { label: "Publications", target: "publications" },
@@ -32,7 +33,7 @@ export const siteConfig: SiteConfig = {
   language: "en",
   siteName: "Mostafa Shawkat Imran — Senior Mechanical Engineer",
   siteDescription:
-    "Senior Mechanical Engineer and engineering consultant based in Dhaka, Bangladesh — completed ASME-accredited professional development courses; boiler design, pressure vessels, hydrogen piping, medical gas systems and sustainable energy.",
+    "Founder & Principal Consultant of NSP — engineering audits and consultancy for hospitals, factories and infrastructure projects in Bangladesh & Indonesia. ASME-trained engineer with accredited CEUs/PDHs; boiler design, pressure vessels, hydrogen piping, medical gas systems and sustainable energy.",
 };
 
 // Hero Section
@@ -40,14 +41,17 @@ export interface HeroConfig {
   backgroundImage: string;
   backgroundAlt: string;
   title: string;
-  subtitle: string;
+  role: string;
+  subline: string;
 }
 
 export const heroConfig: HeroConfig = {
   backgroundImage: "/hero-bg.webp",
   backgroundAlt: "Industrial power plant with boiler vessels and steel piping at golden hour",
   title: "Mostafa Shawkat Imran",
-  subtitle: "Senior Mechanical Engineer · ASME-Trained Engineer with Accredited CEUs/PDHs · Consultant",
+  role: "Founder & Principal Consultant, NSP",
+  subline:
+    "Engineering audits and consultancy for hospitals, factories and infrastructure projects in Bangladesh & Indonesia.",
 };
 
 // Narrative Text Section
@@ -58,11 +62,9 @@ export interface NarrativeTextConfig {
 }
 
 export const narrativeTextConfig: NarrativeTextConfig = {
-  line1: "Engineering that powers industry, healthcare and sustainable growth.",
-  line2:
-    "Two decades of electromechanical design, boiler codes and collaborative innovation across Bangladesh.",
-  line3:
-    "Now consulting through NSP (Dhaka) and PT Sun Moon Ecosystem (Jakarta) — healthcare MEP validation, industrial energy audits, telecom infrastructure maintenance and boiler code expertise, delivered to international standards.",
+  line1: "20+ years in mechanical engineering.",
+  line2: "Founder of Nobo Shakti Prokushal (NSP).",
+  line3: "Cross-border engineering consultancy in Bangladesh & Indonesia.",
 };
 
 // Card Stack Section — Fields of practice
@@ -342,6 +344,7 @@ export interface ServiceItem {
   description: string;
   whatWeDo: string[];
   compliance: string[];
+  result: string;
   ctaText: string;
   ctaHref: string;
 }
@@ -372,6 +375,7 @@ export const servicesConfig: ServicesConfig = {
         "Fire safety audit and documentation support for DGHS licensing",
       ],
       compliance: ["NFPA-99", "ISO 7396-1", "DGHS Bangladesh"],
+      result: "Oxygen manifold & medical gas connectivity across 20+ health facilities with Save the Children, 2023",
       ctaText: "Call for Audit",
       ctaHref: "tel:+8801714073604",
     },
@@ -388,6 +392,7 @@ export const servicesConfig: ServicesConfig = {
         "Energy-saving programs aligned to Higg FEM and LEED reporting",
       ],
       compliance: ["ASME BPVC", "Higg FEM", "LEED", "ISO 50001"],
+      result: "AMC and energy-saving programs for textile plants, aligned to Higg FEM / LEED reporting",
       ctaText: "Call for Audit",
       ctaHref: "tel:+8801714073604",
     },
@@ -404,6 +409,7 @@ export const servicesConfig: ServicesConfig = {
         "Preventive generator maintenance and emergency call-out support",
       ],
       compliance: ["Operator SLA Standards", "ISO 9001"],
+      result: "Shelter HVAC, DC power and generator maintenance across operator networks in Bangladesh",
       ctaText: "Call for Audit",
       ctaHref: "tel:+8801714073604",
     },
@@ -420,6 +426,7 @@ export const servicesConfig: ServicesConfig = {
         "Boiler code, safety protocols and operational guideline development",
       ],
       compliance: ["ASME BPVC", "ASME B31.12", "ASME B31.3"],
+      result: "National Boiler Code drafting with GIZ — integrating ASME BPVC and B31.12 hydrogen piping",
       ctaText: "Call for Audit",
       ctaHref: "tel:+8801714073604",
     },
@@ -436,6 +443,7 @@ export const servicesConfig: ServicesConfig = {
         "Nurse call and life safety system integration for hospitals",
       ],
       compliance: ["NFPA 13/14", "NFPA 101", "BNBC"],
+      result: "Fire safety audits and evacuation planning supporting hospital DGHS licensing",
       ctaText: "Call for Audit",
       ctaHref: "tel:+8801714073604",
     },
@@ -452,6 +460,7 @@ export const servicesConfig: ServicesConfig = {
         "Green building design review and LEED documentation support",
       ],
       compliance: ["LEED", "ISO 14001", "Green Building Codes"],
+      result: "Single-dome industrial biogas plant with biogas–diesel hybrid generation, 2022",
       ctaText: "Call for Audit",
       ctaHref: "tel:+8801714073604",
     },
@@ -701,15 +710,16 @@ export const footerConfig: FooterConfig = {
   address: [],
   addresses: [
     {
-      label: "Bangladesh Office · NSP",
-      lines: ["73/H Green Road", "Dhaka-1205, Bangladesh"],
+      label: "Bangladesh Office · NSP · UTC+6",
+      lines: ["73/H Green Road", "Dhaka-1205, Bangladesh", "Sun–Thu · 9:00–18:00 (UTC+6)"],
     },
     {
-      label: "Indonesia Office · PT Sun Moon Ecosystem",
+      label: "Indonesia Office · PT Sun Moon Ecosystem · UTC+7",
       lines: [
         "RUKO Citra 7, Jalan Peta Barat",
         "Block A03 No. 10, RT.007/RW.011, Kalideres",
         "Kota Adm. Jakarta Barat, DKI Jakarta, Indonesia",
+        "Mon–Fri · 9:00–18:00 (UTC+7)",
       ],
     },
   ],

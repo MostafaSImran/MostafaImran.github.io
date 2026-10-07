@@ -143,13 +143,18 @@ const Hero = () => {
           {heroConfig.title}
         </h1>
 
-        {/* Subtitle */}
+        {/* Role */}
         <p
           ref={subtitleRef}
-          className="font-body text-kaleo-cream/90 text-sm md:text-base uppercase tracking-[0.3em] mt-6 text-center"
+          className="font-body text-kaleo-terracotta text-sm md:text-base uppercase tracking-[0.3em] mt-6 text-center"
           style={{ willChange: 'transform, opacity' }}
         >
-          {heroConfig.subtitle}
+          {heroConfig.role}
+        </p>
+
+        {/* Subline */}
+        <p className="font-body text-kaleo-cream/85 text-sm md:text-base max-w-xl mx-auto leading-relaxed mt-4 text-center px-2">
+          {heroConfig.subline}
         </p>
 
         {/* Primary CTA */}

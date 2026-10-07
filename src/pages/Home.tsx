@@ -15,6 +15,8 @@ import ZigZagGrid from '../sections/ZigZagGrid';
 import ScaniaFeature from '../sections/ScaniaFeature';
 import ProductFeature from '../sections/ProductFeature';
 import SoundPod from '../sections/SoundPod';
+import ProofStrip from '../sections/ProofStrip';
+import Projects from '../sections/Projects';
 import PlanYourProject from '../sections/PlanYourProject';
 import Credentials from '../sections/Credentials';
 import Research from '../sections/Research';
@@ -61,6 +63,9 @@ export default function Home() {
       {/* Hero Section */}
       <Hero />
 
+      {/* Proof Strip — animated trust counters */}
+      <ProofStrip />
+
       {/* Narrative Text Section */}
       <div id="about">
         <NarrativeText />
@@ -75,6 +80,11 @@ export default function Home() {
       {/* Services Section */}
       <div id="services">
         <Services />
+      </div>
+
+      {/* Selected Projects */}
+      <div id="projects">
+        <Projects />
       </div>
 
       {/* Zig-Zag Grid Section */}

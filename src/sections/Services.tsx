@@ -15,10 +15,10 @@ const inquiryButtonLabel: Record<Language, string> = {
 
 gsap.registerPlugin(ScrollTrigger);
 
-const labels: Record<Language, { whatWeDo: string; compliance: string }> = {
-  en: { whatWeDo: 'What We Do', compliance: 'Compliance Standards' },
-  bn: { whatWeDo: 'আমরা যা করি', compliance: 'সম্মতি মানদণ্ড' },
-  id: { whatWeDo: 'Apa yang Kami Kerjakan', compliance: 'Standar Kepatuhan' },
+const labels: Record<Language, { whatWeDo: string; compliance: string; trackRecord: string }> = {
+  en: { whatWeDo: 'What We Do', compliance: 'Compliance Standards', trackRecord: 'Track Record' },
+  bn: { whatWeDo: 'আমরা যা করি', compliance: 'সম্মতি মানদণ্ড', trackRecord: 'কাজের নজির' },
+  id: { whatWeDo: 'Apa yang Kami Kerjakan', compliance: 'Standar Kepatuhan', trackRecord: 'Rekam Jejak' },
 };
 
 const badgeStyles: Record<ServiceItem['badgeStyle'], string> = {
@@ -109,6 +109,18 @@ const ServiceCard = ({ service, index }: { service: ServiceItem; index: number }
           ))}
         </div>
       </div>
+
+      {/* Track Record */}
+      {service.result && (
+        <div className="mt-7 pt-5 border-t border-kaleo-earth/10">
+          <h4 className="font-body text-[10px] uppercase tracking-[0.2em] text-kaleo-earth/50 mb-2">
+            {labels[lang].trackRecord}
+          </h4>
+          <p className="font-body text-sm text-kaleo-earth/80 leading-relaxed">
+            {service.result}
+          </p>
+        </div>
+      )}
 
       {/* CTAs — inquiry first (works on desktop), call second with number visible */}
       <div className="mt-8 flex flex-col gap-3">
