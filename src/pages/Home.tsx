@@ -19,6 +19,7 @@ import Credentials from '../sections/Credentials';
 import Research from '../sections/Research';
 import Publications from '../sections/Publications';
 import Footer from '../sections/Footer';
+import FloatingActions from '../sections/FloatingActions';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -105,6 +106,9 @@ export default function Home() {
       <div id="contact">
         <Footer />
       </div>
+
+      {/* Floating contact bar (Call / WhatsApp / Email) */}
+      <FloatingActions />
     </div>
   );
 }

@@ -1,9 +1,26 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ClipboardCheck, Phone } from 'lucide-react';
+import { ClipboardCheck, Phone, MessageCircle } from 'lucide-react';
 import { type ServiceItem } from '../config';
 import { useContent } from '../i18n/LanguageContext';
+import type { Language } from '../i18n/types';
+
+const WHATSAPP_NUMBER = '8801714073604';
+
+const inquiryLabel: Record<Language, string> = {
+  en: 'WhatsApp Inquiry',
+  bn: 'হোয়াটসঅ্যাপে জানান',
+  id: 'Tanya via WhatsApp',
+};
+
+const inquiryText = (lang: Language, service: string): string => {
+  if (lang === 'bn')
+    return `আসসালামু আলাইকুম, আমি আপনার ওয়েবসাইট দেখেছি এবং এই সেবায় আগ্রহী: ${service}। বিস্তারিত জানতে আপনার সাথে যোগাযোগ করতে চাই।`;
+  if (lang === 'id')
+    return `Halo Pak Mostafa, saya menemukan situs web Anda dan tertarik dengan layanan: ${service}. Mohon hubungi saya untuk detail lebih lanjut.`;
+  return `Hello Mostafa, I found your website and I'm interested in your service: ${service}. Please contact me with more details.`;
+};
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,6 +32,7 @@ const badgeStyles: Record<ServiceItem['badgeStyle'], string> = {
 
 const ServiceCard = ({ service, index }: { service: ServiceItem; index: number }) => {
   const cardRef = useRef<HTMLDivElement>(null);
+  const { lang } = useContent();
 
   useEffect(() => {
     const card = cardRef.current;
@@ -95,14 +113,25 @@ const ServiceCard = ({ service, index }: { service: ServiceItem; index: number }
         </div>
       </div>
 
-      {/* CTA */}
-      <a
-        href={service.ctaHref}
-        className="mt-8 inline-flex items-center justify-center gap-2 font-body text-sm uppercase tracking-wider text-kaleo-earth border border-kaleo-earth/25 rounded-full px-6 py-3.5 hover:bg-kaleo-terracotta hover:text-kaleo-cream hover:border-kaleo-terracotta transition-all"
-      >
-        <Phone className="w-4 h-4" />
-        {service.ctaText}
-      </a>
+      {/* CTAs */}
+      <div className="mt-8 flex flex-col gap-3">
+        <a
+          href={service.ctaHref}
+          className="inline-flex items-center justify-center gap-2 font-body text-sm uppercase tracking-wider text-kaleo-earth border border-kaleo-earth/25 rounded-full px-6 py-3.5 hover:bg-kaleo-terracotta hover:text-kaleo-cream hover:border-kaleo-terracotta transition-all"
+        >
+          <Phone className="w-4 h-4" />
+          {service.ctaText}
+        </a>
+        <a
+          href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(inquiryText(lang, service.title))}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center gap-2 font-body text-sm uppercase tracking-wider text-kaleo-cream bg-kaleo-terracotta border border-kaleo-terracotta rounded-full px-6 py-3.5 hover:bg-kaleo-earth hover:border-kaleo-earth transition-all"
+        >
+          <MessageCircle className="w-4 h-4" />
+          {inquiryLabel[lang]}
+        </a>
+      </div>
     </div>
   );
 };
