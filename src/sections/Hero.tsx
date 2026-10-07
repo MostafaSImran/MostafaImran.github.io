@@ -131,6 +131,14 @@ const Hero = () => {
 
       {/* Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center px-4">
+        {/* Portrait */}
+        <img
+          src="/portrait.webp"
+          alt={heroConfig.title}
+          className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover border-2 border-kaleo-cream/70 shadow-2xl mb-6"
+          style={{ willChange: 'transform, opacity' }}
+        />
+
         {/* Main Title */}
         <h1
           ref={titleRef}

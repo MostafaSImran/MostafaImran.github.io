@@ -92,6 +92,30 @@ const Research = () => {
                 <BookOpen className="w-4 h-4" />
                 {lang === 'bn' ? 'নির্বাচিত প্রকাশনা' : lang === 'id' ? 'Publikasi Terpilih' : 'Selected Publication'}
               </h3>
+
+              {/* Conference photo */}
+              <figure className="mb-10">
+                <img
+                  src="/research-ieom.webp"
+                  alt={
+                    lang === 'bn'
+                      ? '৭ম আইইওএম বাংলাদেশ আন্তর্জাতিক কনফারেন্স, আইআইউবি, ঢাকা — ডিসেম্বর ২০২৪'
+                      : lang === 'id'
+                        ? 'Konferensi Internasional IEOM Bangladesh ke-7, AIUB, Dhaka — Desember 2024'
+                        : '7th IEOM Bangladesh International Conference, AIUB, Dhaka — December 2024'
+                  }
+                  loading="lazy"
+                  className="w-full rounded-2xl object-cover border border-kaleo-earth/10"
+                />
+                <figcaption className="font-body text-xs text-kaleo-earth/50 mt-3 leading-relaxed">
+                  {lang === 'bn'
+                    ? '৭ম আইইওএম বাংলাদেশ আন্তর্জাতিক কনফারেন্সে প্রবন্ধ উপস্থাপন, আইআইউবি, ঢাকা — ডিসেম্বর ২০২৪'
+                    : lang === 'id'
+                      ? 'Presentasi makalah di Konferensi Internasional IEOM Bangladesh ke-7, AIUB, Dhaka — Desember 2024'
+                      : 'Presenting at the 7th IEOM Bangladesh International Conference, AIUB, Dhaka — December 2024'}
+                </figcaption>
+              </figure>
+
               <div className="border-l-2 border-kaleo-terracotta/40 pl-6 md:pl-8">
                 <p className="font-display text-subheadline text-kaleo-earth leading-snug">
                   {researchConfig.publicationTitle}
