@@ -77,6 +77,8 @@ const PublicationRow = ({ pub, index }: { pub: PublicationItem; index: number })
         <a
           href={pub.file}
           download
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center justify-center gap-2 font-body text-xs uppercase tracking-wider text-kaleo-earth border border-kaleo-earth/25 rounded-full px-6 py-3.5 hover:bg-kaleo-terracotta hover:text-kaleo-cream hover:border-kaleo-terracotta transition-all"
         >
           <Download className="w-4 h-4" />

@@ -32,7 +32,7 @@ export const siteConfig: SiteConfig = {
   language: "en",
   siteName: "Mostafa Shawkat Imran — Senior Mechanical Engineer",
   siteDescription:
-    "Senior Mechanical Engineer, ASME Certified Specialist and Engineering Consultant based in Dhaka, Bangladesh — boiler design, pressure vessels, hydrogen piping, medical gas systems and sustainable energy.",
+    "Senior Mechanical Engineer, ASME-trained specialist and engineering consultant based in Dhaka, Bangladesh — boiler design, pressure vessels, hydrogen piping, medical gas systems and sustainable energy.",
 };
 
 // Hero Section
@@ -44,10 +44,10 @@ export interface HeroConfig {
 }
 
 export const heroConfig: HeroConfig = {
-  backgroundImage: "/hero-bg.jpg",
+  backgroundImage: "/hero-bg.webp",
   backgroundAlt: "Industrial power plant with boiler vessels and steel piping at golden hour",
   title: "Mostafa Shawkat Imran",
-  subtitle: "Senior Mechanical Engineer · ASME Certified · Consultant",
+  subtitle: "Senior Mechanical Engineer · ASME-trained · Consultant",
 };
 
 // Narrative Text Section
@@ -86,7 +86,7 @@ export const cardStackConfig: CardStackConfig = {
   cards: [
     {
       id: 1,
-      image: "/card-boiler.jpg",
+      image: "/card-boiler.webp",
       title: "Boiler Design & Pressure Vessels",
       description:
         "Key Expert for Bangladesh's national Boiler Code development with GIZ — drafting design, construction and operational standards, and integrating ASME BPVC and B31.12 hydrogen piping into the national regulatory framework.",
@@ -94,7 +94,7 @@ export const cardStackConfig: CardStackConfig = {
     },
     {
       id: 2,
-      image: "/card-medical.jpg",
+      image: "/card-medical.webp",
       title: "Medical Gas & Healthcare Infrastructure",
       description:
         "Designed NFPA-99 compliant medical gas pipeline systems with USAID — pressure vessels, vacuum tanks, fire hydrants and nurse call systems for hospitals nationwide, including healthcare infrastructure delivery for Save the Children.",
@@ -102,7 +102,7 @@ export const cardStackConfig: CardStackConfig = {
     },
     {
       id: 3,
-      image: "/card-energy.jpg",
+      image: "/card-energy.webp",
       title: "Sustainable Energy & Green Engineering",
       description:
         "Directed renewable energy projects including biogas–diesel hybrid systems and waste-to-energy solutions — pioneering bi-fuel engine development and LEED-aligned green building practice.",
@@ -121,12 +121,12 @@ export interface BreathSectionConfig {
 }
 
 export const breathSectionConfig: BreathSectionConfig = {
-  backgroundImage: "/breath-bg.jpg",
+  backgroundImage: "/breath-bg.webp",
   backgroundAlt: "Hydrogen pipeline infrastructure and pressure vessels at dusk",
   title: "Consulting Across Borders",
   subtitle: "Dhaka · Jakarta · Worldwide",
   description:
-    "Available for consultancy engagements worldwide — healthcare MEP validation, industrial energy audits, telecom infrastructure maintenance and boiler code expertise, delivered through NSP in Dhaka and PT Sun Moon Ecosystem in Jakarta.",
+    "One team, two offices — NSP in Dhaka and PT Sun Moon Ecosystem in Jakarta — serving hospitals, textile factories, telecom operators and resort developers across Bangladesh, Indonesia and beyond.",
 };
 
 // ZigZag Grid Section — Experience
@@ -156,7 +156,7 @@ export const zigZagGridConfig: ZigZagGridConfig = {
       subtitle: "Key Expert 1 · GIZ Project 7000015619 · Qtex Solutions · 2026–Present",
       description:
         "Serving as Key Expert for boiler design and operation on the Bangladesh Boiler Code Development Project — drafting and reviewing national standards, preparing operational guidelines, safety protocols and maintenance schedules, and presenting technical frameworks to stakeholders at workshops with GIZ, CIOB and RSC.",
-      image: "/grid-automation.jpg",
+      image: "/grid-automation.webp",
       imageAlt: "Engineer reviewing instrumentation and control panels",
       reverse: false,
     },
@@ -166,7 +166,7 @@ export const zigZagGridConfig: ZigZagGridConfig = {
       subtitle: "Nobo Shakti Prokushal (NSP) · 2007–Present",
       description:
         "Founded and lead a consultancy specializing in electromechanical systems, fire protection, HVAC and medical gas solutions — from NFPA-99 compliant hospital pipelines to advanced pressure vessels, vacuum tanks and renewable energy systems.",
-      image: "/grid-consultancy.jpg",
+      image: "/grid-consultancy.webp",
       imageAlt: "Consultant presenting technical drawings to stakeholders",
       reverse: true,
     },
@@ -176,7 +176,7 @@ export const zigZagGridConfig: ZigZagGridConfig = {
       subtitle: "Healthcare · Transport · Energy",
       description:
         "Led healthcare infrastructure engineering for Save the Children (2022–2023); developed biogas–diesel hybrid systems for the BCSIR Bi-Fuel Conversion Project (2006–2007); and delivered medical gas, fire protection and nurse call systems for hospitals nationwide — alongside a landmark transport design: Bangladesh's first luxury bus body for Scania, showcased below.",
-      image: "/card-energy.jpg",
+      image: "/card-energy.webp",
       imageAlt: "Single-dome biogas digester at an industrial poultry farm in golden light",
       reverse: false,
     },
@@ -308,7 +308,7 @@ export interface ScaniaConfig {
 export const scaniaConfig: ScaniaConfig = {
   sectionLabel: "Signature Design Achievement · 2010–2011",
   sectionTitle: "Bangladesh's First Luxury Bus Body",
-  image: "/scania-bus.jpg",
+  image: "/scania-bus.webp",
   imageAlt: "Luxury coach bus with sculpted aerodynamic bodywork in golden-hour light",
   subtitle: "Scania Bus Body Design & Implementation",
   lead: "Led the design and implementation of Bangladesh's first luxury bus body structure — a ground-up engineering achievement on the Scania platform that redefined passenger transport standards in the country.",
@@ -476,7 +476,7 @@ export interface ProductConfig {
 export const productConfig: ProductConfig = {
   sectionLabel: "Product Innovation · Green Resort Sustainable Energy Park",
   sectionTitle: "EcoNest 3010 — Capsule Home",
-  image: "/econest-capsule.jpg",
+  image: "/econest-capsule.webp",
   imageAlt: "Prefab capsule home with panoramic glazing in a green eco-resort at golden hour",
   subtitle: "Prefab Smart Capsule Home · 30' × 10' × 9'",
   lead: "A turnkey smart capsule residence engineered for eco-resorts and sustainable energy parks — factory-built, transportable, and ready to live in from day one.",
@@ -532,7 +532,7 @@ export const soundpodConfig: SoundPodConfig = {
   sectionIntro:
     "Self-contained acoustic pods designed for focused work and private conversations in open offices, co-working spaces and public venues — engineered for quick installation and everyday comfort.",
   video: "/soundpod/soundpod-ad.mp4",
-  videoPoster: "/soundpod/double-1.jpg",
+  videoPoster: "/soundpod/double-1.webp",
   videoTitle: "Sound Pod in motion",
   models: [
     {
@@ -547,7 +547,7 @@ export const soundpodConfig: SoundPodConfig = {
         "Built-in work shelf, ready for laptop and video calls",
         "Soft rounded frame — plug-and-play placement, no construction needed",
       ],
-      images: ["/soundpod/single-1.jpg", "/soundpod/single-2.jpg"],
+      images: ["/soundpod/single-1.webp", "/soundpod/single-2.webp"],
     },
     {
       id: "double",
@@ -562,10 +562,10 @@ export const soundpodConfig: SoundPodConfig = {
         "Multiple finish options — sage, terracotta, violet and more",
       ],
       images: [
-        "/soundpod/double-1.jpg",
-        "/soundpod/double-2.jpg",
-        "/soundpod/double-3.jpg",
-        "/soundpod/double-4.jpg",
+        "/soundpod/double-1.webp",
+        "/soundpod/double-2.webp",
+        "/soundpod/double-3.webp",
+        "/soundpod/double-4.webp",
       ],
     },
   ],

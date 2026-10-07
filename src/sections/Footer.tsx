@@ -70,7 +70,12 @@ const iconMap: Record<string, typeof Instagram> = {
 };
 
 const Footer = () => {
-  const { content: { footer: footerConfig } } = useContent();
+  const { content: { footer: footerConfig }, lang } = useContent();
+  // Auto-update the copyright year (Bengali numerals for the Bangla locale)
+  const year = new Date().getFullYear();
+  const bnDigits = (n: number) => String(n).replace(/\d/g, (d) => '০১২৩৪৫৬৭৮৯'[Number(d)]);
+  const yearStr = lang === 'bn' ? bnDigits(year) : String(year);
+  const copyright = footerConfig.copyright.replace(/২০২৬|2026/, yearStr);
   const sectionRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -154,7 +159,7 @@ const Footer = () => {
         style={{ willChange: 'transform' }}
       >
         <img
-          src="/footer-cabin.jpg"
+          src="/footer-cabin.webp"
           alt=""
           className="w-full h-full object-cover"
         />
@@ -201,10 +206,14 @@ const Footer = () => {
                         <li key={index}>
                           <a
                             href={item.href}
-                            className="font-body text-sm text-kaleo-cream/70 hover:text-kaleo-cream transition-colors flex items-center gap-2"
+                            className="font-body text-sm text-kaleo-cream/70 hover:text-kaleo-cream transition-colors flex items-start gap-2 min-w-0"
                           >
-                            {item.type === 'email' ? <Mail className="w-4 h-4" /> : <Phone className="w-4 h-4" />}
-                            {item.label}
+                            {item.type === 'email' ? (
+                              <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                            ) : (
+                              <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                            )}
+                            <span className="break-all leading-relaxed">{item.label}</span>
                           </a>
                         </li>
                       ))}
@@ -319,12 +328,18 @@ const Footer = () => {
         <div className="border-t border-kaleo-cream/10 py-6">
           <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="font-body text-xs text-kaleo-cream/40">
-              {footerConfig.copyright}
+              {copyright}
             </p>
             {footerConfig.links.length > 0 && (
               <div className="flex gap-6">
                 {footerConfig.links.map((link, index) => (
-                  <a key={index} href={link.href} className="font-body text-xs text-kaleo-cream/40 hover:text-kaleo-cream transition-colors">
+                  <a
+                    key={index}
+                    href={link.href}
+                    target={link.href.startsWith('http') ? '_blank' : undefined}
+                    rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    className="font-body text-xs text-kaleo-cream/40 hover:text-kaleo-cream transition-colors"
+                  >
                     {link.label}
                   </a>
                 ))}

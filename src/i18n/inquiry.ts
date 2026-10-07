@@ -4,6 +4,7 @@
 import type { Language } from './types';
 
 export const WHATSAPP_NUMBER = '8801714073604';
+export const CONTACT_EMAIL = 'mostafa@noboshaktiprokushal.com';
 
 export type InquiryFieldType = 'text' | 'number' | 'date' | 'textarea' | 'select';
 
@@ -39,6 +40,8 @@ export const inquiryUi = {
   company: L('Company / Organization', 'প্রতিষ্ঠানের নাম', 'Perusahaan / Organisasi'),
   phone: L('Phone', 'ফোন', 'Telepon'),
   submit: L('Send via WhatsApp', 'হোয়াটসঅ্যাপে পাঠান', 'Kirim via WhatsApp'),
+  submitEmail: L('Send via Email', 'ইমেইলে পাঠান', 'Kirim via Email'),
+  emailChoice: L('Prefer email? Corporate buyers can send the same details by email instead.', 'ইমেইলে পাঠাতে চান? এই একই তথ্য ইমেইলেও পাঠাতে পারবেন।', 'Lebih suka email? Kirim detail yang sama melalui email.'),
   cancel: L('Cancel', 'বাতিল', 'Batal'),
   requiredHint: L('Fields marked * are required.', '* চিহ্নিত ঘরগুলো আবশ্যক।', 'Kolom bertanda * wajib diisi.'),
   messageIntro: L('New website inquiry', 'ওয়েবসাইট থেকে নতুন অনুসন্ধান', 'Permintaan baru dari situs web'),

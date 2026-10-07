@@ -81,12 +81,12 @@ export default function Home() {
       <ZigZagGrid />
 
       {/* Scania Feature Section */}
-      <div id="products">
-        <ScaniaFeature />
-      </div>
+      <ScaniaFeature />
 
       {/* EcoNest Product Feature Section */}
-      <ProductFeature />
+      <div id="products">
+        <ProductFeature />
+      </div>
 
       {/* Sound Pod Section */}
       <SoundPod />

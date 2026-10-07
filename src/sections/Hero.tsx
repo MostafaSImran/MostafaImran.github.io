@@ -2,11 +2,18 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useContent } from '../i18n/LanguageContext';
+import type { Language } from '../i18n/types';
+
+const heroCta: Record<Language, string> = {
+  en: 'Request an Audit',
+  bn: 'অডিটের অনুরোধ করুন',
+  id: 'Minta Audit',
+};
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
-  const { content: { hero: heroConfig } } = useContent();
+  const { content: { hero: heroConfig }, lang } = useContent();
   const sectionRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
@@ -127,7 +134,7 @@ const Hero = () => {
         {/* Main Title */}
         <h1
           ref={titleRef}
-          className="font-display text-kaleo-cream text-display tracking-tight select-none"
+          className="font-display text-kaleo-cream text-display tracking-tight select-none text-center px-2"
           style={{
             textShadow: '0 4px 30px rgba(0,0,0,0.3)',
             willChange: 'transform, opacity'
@@ -139,11 +146,25 @@ const Hero = () => {
         {/* Subtitle */}
         <p
           ref={subtitleRef}
-          className="font-body text-kaleo-cream/90 text-sm md:text-base uppercase tracking-[0.3em] mt-6"
+          className="font-body text-kaleo-cream/90 text-sm md:text-base uppercase tracking-[0.3em] mt-6 text-center"
           style={{ willChange: 'transform, opacity' }}
         >
           {heroConfig.subtitle}
         </p>
+
+        {/* Primary CTA */}
+        <button
+          onClick={() => {
+            const el = document.getElementById('services');
+            if (!el) return;
+            const lenis = (window as unknown as { __lenis?: { scrollTo: (t: HTMLElement, o?: object) => void } }).__lenis;
+            if (lenis) lenis.scrollTo(el, { offset: -72, duration: 1.4 });
+            else el.scrollIntoView({ behavior: 'smooth' });
+          }}
+          className="mt-10 inline-flex items-center gap-2 font-body text-sm uppercase tracking-wider text-kaleo-charcoal bg-kaleo-cream rounded-full px-8 py-4 hover:bg-kaleo-terracotta hover:text-kaleo-cream transition-all shadow-lg"
+        >
+          {heroCta[lang]}
+        </button>
       </div>
 
       {/* Bottom gradient for seamless transition */}

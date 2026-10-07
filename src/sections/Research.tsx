@@ -7,7 +7,7 @@ import { useContent } from '../i18n/LanguageContext';
 gsap.registerPlugin(ScrollTrigger);
 
 const Research = () => {
-  const { content: { research: researchConfig } } = useContent();
+  const { content: { research: researchConfig }, lang } = useContent();
   const sectionRef = useRef<HTMLDivElement>(null);
   const headerRef = useRef<HTMLDivElement>(null);
   const bodyRef = useRef<HTMLDivElement>(null);
@@ -90,7 +90,7 @@ const Research = () => {
             <div className="lg:col-span-6">
               <h3 className="font-body text-xs uppercase tracking-[0.2em] text-kaleo-terracotta flex items-center gap-2 mb-8">
                 <BookOpen className="w-4 h-4" />
-                Selected Publication
+                {lang === 'bn' ? 'নির্বাচিত প্রকাশনা' : lang === 'id' ? 'Publikasi Terpilih' : 'Selected Publication'}
               </h3>
               <div className="border-l-2 border-kaleo-terracotta/40 pl-6 md:pl-8">
                 <p className="font-display text-subheadline text-kaleo-earth leading-snug">

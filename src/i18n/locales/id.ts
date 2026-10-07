@@ -5,7 +5,7 @@ export const id: Content = {
     language: 'id',
     siteName: 'Mostafa Shawkat Imran — Insinyur Mekanikal Senior',
     siteDescription:
-      'Insinyur Mekanikal Senior, Spesialis Bersertifikat ASME dan Konsultan Teknik yang berbasis di Dhaka, Bangladesh — desain boiler, pressure vessel, perpipaan hidrogen, sistem gas medis dan energi berkelanjutan.',
+      'Insinyur Mekanikal Senior, Spesialis Berpelatihan ASME dan Konsultan Teknik yang berbasis di Dhaka, Bangladesh — desain boiler, pressure vessel, perpipaan hidrogen, sistem gas medis dan energi berkelanjutan.',
   },
   nav: {
     brand: 'Mostafa Shawkat Imran',
@@ -19,10 +19,10 @@ export const id: Content = {
     ],
   },
   hero: {
-    backgroundImage: '/hero-bg.jpg',
+    backgroundImage: '/hero-bg.webp',
     backgroundAlt: 'Pembangkit listrik industri dengan bejana boiler dan perpipaan baja pada golden hour',
     title: 'Mostafa Shawkat Imran',
-    subtitle: 'Insinyur Mekanikal Senior · Bersertifikat ASME · Konsultan',
+    subtitle: 'Insinyur Mekanikal Senior · Berpelatihan ASME · Konsultan',
   },
   narrative: {
     line1: 'Teknik yang menggerakkan industri, layanan kesehatan dan pertumbuhan berkelanjutan.',
@@ -35,7 +35,7 @@ export const id: Content = {
     cards: [
       {
         id: 1,
-        image: '/card-boiler.jpg',
+        image: '/card-boiler.webp',
         title: 'Desain Boiler & Pressure Vessel',
         description:
           'Key Expert dalam penyusunan Kode Boiler Nasional Bangladesh bersama GIZ — menyusun dan meninjau standar desain, konstruksi dan operasional, serta mengintegrasikan ASME BPVC dan perpipaan hidrogen B31.12 ke dalam kerangka regulasi nasional.',
@@ -43,7 +43,7 @@ export const id: Content = {
       },
       {
         id: 2,
-        image: '/card-medical.jpg',
+        image: '/card-medical.webp',
         title: 'Gas Medis & Infrastruktur Layanan Kesehatan',
         description:
           'Desain sistem perpipaan gas medis sesuai NFPA-99 bersama USAID — pressure vessel, tangki vakum, fire hydrant dan sistem nurse call di seluruh rumah sakit; termasuk implementasi infrastruktur layanan kesehatan untuk Save the Children.',
@@ -51,7 +51,7 @@ export const id: Content = {
       },
       {
         id: 3,
-        image: '/card-energy.jpg',
+        image: '/card-energy.webp',
         title: 'Energi Berkelanjutan & Teknik Hijau',
         description:
           'Memimpin proyek energi terbarukan termasuk sistem hibrida biogas–diesel dan solusi waste-to-energy — peran utama dalam pengembangan mesin bi-fuel dan praktik bangunan hijau sesuai LEED.',
@@ -60,12 +60,12 @@ export const id: Content = {
     ],
   },
   breath: {
-    backgroundImage: '/breath-bg.jpg',
+    backgroundImage: '/breath-bg.webp',
     backgroundAlt: 'Infrastruktur perpipaan hidrogen dan pressure vessel pada senja hari',
     title: 'Konsultasi Lintas Batas',
     subtitle: 'Dhaka · Jakarta · Seluruh Dunia',
     description:
-      'Tersedia untuk kontrak konsultasi di seluruh dunia — validasi MEP layanan kesehatan, audit energi industri, pemeliharaan infrastruktur telekomunikasi dan keahlian kode boiler, melalui NSP di Dhaka dan PT Sun Moon Ecosystem di Jakarta.',
+      'Satu tim, dua kantor — NSP di Dhaka dan PT Sun Moon Ecosystem di Jakarta — melayani rumah sakit, pabrik tekstil, operator telekomunikasi dan pengembang resor di Bangladesh, Indonesia dan luar negeri.',
   },
   zigzag: {
     sectionLabel: 'Pengalaman Profesional',
@@ -77,7 +77,7 @@ export const id: Content = {
         subtitle: 'Key Expert 1 · Proyek GIZ 7000015619 · Qtex Solutions · 2026–Sekarang',
         description:
           'Menjabat sebagai Key Expert desain dan operasional boiler dalam Proyek Pengembangan Kode Boiler Nasional Bangladesh — penyusunan dan peninjauan standar nasional, penyusunan pedoman operasional, protokol keselamatan dan jadwal pemeliharaan, serta presentasi kerangka teknis dalam lokakarya pemangku kepentingan bersama GIZ, CIOB dan RSC.',
-        image: '/grid-automation.jpg',
+        image: '/grid-automation.webp',
         imageAlt: 'Operator meninjau panel kontrol',
         reverse: false,
       },
@@ -87,7 +87,7 @@ export const id: Content = {
         subtitle: 'Nobo Shakti Prokushal (NSP) · 2007–Sekarang',
         description:
           'Mendirikan dan memimpin firma konsultan yang berspesialisasi dalam sistem elektromekanikal, fire protection, HVAC dan solusi gas medis — dari perpipaan rumah sakit sesuai NFPA-99 hingga pressure vessel modern, tangki vakum dan sistem energi terbarukan.',
-        image: '/grid-consultancy.jpg',
+        image: '/grid-consultancy.webp',
         imageAlt: 'Menyajikan desain teknis kepada para pemangku kepentingan',
         reverse: true,
       },
@@ -97,7 +97,7 @@ export const id: Content = {
         subtitle: 'Layanan Kesehatan · Transportasi · Energi',
         description:
           'Memimpin rekayasa infrastruktur layanan kesehatan untuk Save the Children (2022–2023); mengembangkan sistem hibrida biogas–diesel untuk Proyek Konversi Bi-Fuel BCSIR (2006–2007); dan mengirimkan sistem gas medis, fire protection dan nurse call ke rumah sakit di seluruh negeri — serta satu desain transportasi yang menjadi tonggak sejarah: bodi bus mewah pertama Bangladesh untuk Scania, dipresentasikan di bawah ini.',
-        image: '/card-energy.jpg',
+        image: '/card-energy.webp',
         imageAlt: 'Instalasi biogas satu kubah di peternakan ayam industri pada cahaya keemasan',
         reverse: false,
       },
@@ -106,7 +106,7 @@ export const id: Content = {
   scania: {
     sectionLabel: 'Pencapaian Desain Unggulan · 2010–2011',
     sectionTitle: 'Bodi Bus Mewah Pertama Bangladesh',
-    image: '/scania-bus.jpg',
+    image: '/scania-bus.webp',
     imageAlt: 'Bus coach mewah pada golden hour',
     subtitle: 'Desain & Implementasi Bodi Bus Scania',
     lead: 'Memimpin desain dan implementasi bodi bus mewah pertama Bangladesh di atas platform Scania — sebuah pencapaian rekayasa menyeluruh yang mengangkat standar transportasi penumpang nasional ke tingkat yang baru.',
@@ -130,7 +130,7 @@ export const id: Content = {
   product: {
     sectionLabel: 'Inovasi Produk · Green Resort Sustainable Energy Park',
     sectionTitle: 'EcoNest 3010 — Rumah Kapsul',
-    image: '/econest-capsule.jpg',
+    image: '/econest-capsule.webp',
     imageAlt: 'Rumah kapsul prefabrikasi dengan kaca panoramik di resor hijau',
     subtitle: 'Rumah Kapsul Cerdas Prefabrikasi · 30\' × 10\' × 9\'',
     lead: 'Hunian kapsul cerdas turnkey yang siap pakai untuk resor ekologi dan taman energi berkelanjutan — dibangun di pabrik, dapat diangkut dan siap dihuni sejak hari pertama.',
@@ -160,7 +160,7 @@ export const id: Content = {
     sectionIntro:
       'Pod akustik mandiri yang dirancang untuk pekerjaan terfokus dan percakapan pribadi di kantor terbuka, ruang co-working dan tempat publik — direkayasa untuk pemasangan cepat dan kenyamanan setiap hari.',
     video: '/soundpod/soundpod-ad.mp4',
-    videoPoster: '/soundpod/double-1.jpg',
+    videoPoster: '/soundpod/double-1.webp',
     videoTitle: 'Sound Pod dalam gerakan',
     models: [
       {
@@ -174,7 +174,7 @@ export const id: Content = {
           'Rak kerja built-in, siap untuk laptop dan panggilan video',
           'Rangka membulat lembut — pemasangan plug-and-play, tanpa konstruksi',
         ],
-        images: ['/soundpod/single-1.jpg', '/soundpod/single-2.jpg'],
+        images: ['/soundpod/single-1.webp', '/soundpod/single-2.webp'],
       },
       {
         id: 'double',
@@ -188,10 +188,10 @@ export const id: Content = {
           'Pilihan finishing beragam — sage, terakota, violet dan lainnya',
         ],
         images: [
-          '/soundpod/double-1.jpg',
-          '/soundpod/double-2.jpg',
-          '/soundpod/double-3.jpg',
-          '/soundpod/double-4.jpg',
+          '/soundpod/double-1.webp',
+          '/soundpod/double-2.webp',
+          '/soundpod/double-3.webp',
+          '/soundpod/double-4.webp',
         ],
       },
     ],

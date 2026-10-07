@@ -13,6 +13,10 @@ const getInitialLanguage = (): Language => {
   if (typeof window === 'undefined') return 'en';
   const stored = window.localStorage.getItem(STORAGE_KEY);
   if (stored === 'en' || stored === 'bn' || stored === 'id') return stored;
+  // First visit: follow the browser language when we support it
+  const nav = window.navigator.language?.toLowerCase() ?? '';
+  if (nav.startsWith('bn')) return 'bn';
+  if (nav.startsWith('id')) return 'id';
   return 'en';
 };
 

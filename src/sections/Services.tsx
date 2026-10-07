@@ -15,6 +15,12 @@ const inquiryButtonLabel: Record<Language, string> = {
 
 gsap.registerPlugin(ScrollTrigger);
 
+const labels: Record<Language, { whatWeDo: string; compliance: string }> = {
+  en: { whatWeDo: 'What We Do', compliance: 'Compliance Standards' },
+  bn: { whatWeDo: 'আমরা যা করি', compliance: 'সম্মতি মানদণ্ড' },
+  id: { whatWeDo: 'Apa yang Kami Kerjakan', compliance: 'Standar Kepatuhan' },
+};
+
 const badgeStyles: Record<ServiceItem['badgeStyle'], string> = {
   premium: 'bg-kaleo-terracotta text-kaleo-cream border-kaleo-terracotta',
   recurring: 'bg-transparent text-kaleo-terracotta border-kaleo-terracotta/60',
@@ -75,7 +81,7 @@ const ServiceCard = ({ service, index }: { service: ServiceItem; index: number }
       <div className="mt-7">
         <h4 className="font-body text-[10px] uppercase tracking-[0.2em] text-kaleo-terracotta flex items-center gap-2 mb-4">
           <ClipboardCheck className="w-3.5 h-3.5" />
-          What We Do
+          {labels[lang].whatWeDo}
         </h4>
         <ul className="space-y-3">
           {service.whatWeDo.map((item, i) => (
@@ -90,7 +96,7 @@ const ServiceCard = ({ service, index }: { service: ServiceItem; index: number }
       {/* Compliance Standards */}
       <div className="mt-7">
         <h4 className="font-body text-[10px] uppercase tracking-[0.2em] text-kaleo-terracotta mb-4">
-          Compliance Standards
+          {labels[lang].compliance}
         </h4>
         <div className="flex flex-wrap gap-2">
           {service.compliance.map((std, i) => (
@@ -104,15 +110,8 @@ const ServiceCard = ({ service, index }: { service: ServiceItem; index: number }
         </div>
       </div>
 
-      {/* CTAs */}
+      {/* CTAs — inquiry first (works on desktop), call second with number visible */}
       <div className="mt-8 flex flex-col gap-3">
-        <a
-          href={service.ctaHref}
-          className="inline-flex items-center justify-center gap-2 font-body text-sm uppercase tracking-wider text-kaleo-earth border border-kaleo-earth/25 rounded-full px-6 py-3.5 hover:bg-kaleo-terracotta hover:text-kaleo-cream hover:border-kaleo-terracotta transition-all"
-        >
-          <Phone className="w-4 h-4" />
-          {service.ctaText}
-        </a>
         <button
           onClick={() => openInquiry(service.id)}
           className="inline-flex items-center justify-center gap-2 font-body text-sm uppercase tracking-wider text-kaleo-cream bg-kaleo-terracotta border border-kaleo-terracotta rounded-full px-6 py-3.5 hover:bg-kaleo-earth hover:border-kaleo-earth transition-all"
@@ -120,6 +119,14 @@ const ServiceCard = ({ service, index }: { service: ServiceItem; index: number }
           <MessageCircle className="w-4 h-4" />
           {inquiryButtonLabel[lang]}
         </button>
+        <a
+          href={service.ctaHref}
+          className="inline-flex items-center justify-center gap-2 font-body text-sm uppercase tracking-wider text-kaleo-earth border border-kaleo-earth/25 rounded-full px-6 py-3.5 hover:bg-kaleo-terracotta hover:text-kaleo-cream hover:border-kaleo-terracotta transition-all"
+        >
+          <Phone className="w-4 h-4" />
+          {service.ctaText}
+          <span className="normal-case tracking-normal text-kaleo-earth/50 group-hover:text-kaleo-cream/70">+880 1714 073604</span>
+        </a>
       </div>
     </div>
   );

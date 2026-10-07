@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { X, MessageCircle } from 'lucide-react';
+import { X, MessageCircle, Mail } from 'lucide-react';
 import { useContent } from '../i18n/LanguageContext';
-import segments, { inquiryUi, WHATSAPP_NUMBER } from '../i18n/inquiry';
+import segments, { inquiryUi, WHATSAPP_NUMBER, CONTACT_EMAIL } from '../i18n/inquiry';
 import type { InquiryField, InquirySegment } from '../i18n/inquiry';
 
 const inputClass =
@@ -105,7 +105,7 @@ const InquiryModal = () => {
 
   const missingRequired = segment.fields.some((f) => f.required && !values[f.key]?.trim());
 
-  const submit = () => {
+  const composeLines = (): string[] => {
     const lines: string[] = [`*${inquiryUi.messageIntro[lang]}*`, `*${segment.title[lang]}*`, ''];
     segment.fields.forEach((f) => {
       const v = values[f.key]?.trim();
@@ -114,8 +114,26 @@ const InquiryModal = () => {
     if (values.name?.trim()) lines.push(`${inquiryUi.name[lang]}: ${values.name.trim()}`);
     if (values.company?.trim()) lines.push(`${inquiryUi.company[lang]}: ${values.company.trim()}`);
     if (values.phone?.trim()) lines.push(`${inquiryUi.phone[lang]}: ${values.phone.trim()}`);
+    return lines;
+  };
 
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join('\n'))}`, '_blank', 'noopener,noreferrer');
+  const submit = () => {
+    window.open(
+      `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(composeLines().join('\n'))}`,
+      '_blank',
+      'noopener,noreferrer'
+    );
+    setSent(true);
+  };
+
+  const submitEmail = () => {
+    const body = composeLines()
+      .map((l) => l.replace(/\*/g, ''))
+      .join('\n');
+    window.open(
+      `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(segment.title[lang])}&body=${encodeURIComponent(body)}`,
+      '_self'
+    );
     setSent(true);
   };
 
@@ -196,8 +214,18 @@ const InquiryModal = () => {
               <MessageCircle className="w-4 h-4" />
               {inquiryUi.submit[lang]}
             </button>
+            <button
+              onClick={submitEmail}
+              disabled={missingRequired || !values.name?.trim()}
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 font-body text-sm uppercase tracking-wider text-kaleo-earth border border-kaleo-earth/25 rounded-full px-8 py-3.5 hover:bg-kaleo-terracotta hover:text-kaleo-cream hover:border-kaleo-terracotta transition-all disabled:opacity-40 disabled:cursor-not-allowed"
+            >
+              <Mail className="w-4 h-4" />
+              {inquiryUi.submitEmail[lang]}
+            </button>
             <p className="font-body text-[11px] text-kaleo-earth/40">{inquiryUi.requiredHint[lang]}</p>
           </div>
+
+          <p className="mt-4 font-body text-[11px] text-kaleo-earth/45">{inquiryUi.emailChoice[lang]}</p>
 
           {sent && (
             <p className="mt-4 font-body text-xs text-kaleo-terracotta">

@@ -43,7 +43,7 @@ const Navbar = () => {
           key={code}
           onClick={() => setLang(code)}
           aria-label={meta.label}
-          className={`font-body text-[11px] uppercase tracking-[0.1em] rounded-full px-2.5 py-1 transition-colors duration-300 ${
+          className={`font-body text-xs uppercase tracking-[0.1em] rounded-full px-3 py-1.5 transition-colors duration-300 ${
             lang === code
               ? 'bg-kaleo-terracotta text-kaleo-cream'
               : scrolled
@@ -66,7 +66,7 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12 flex items-center justify-between">
-        {/* Brand */}
+        {/* Brand — shortened on tablets so it never collides with the menu */}
         <a
           href="#top"
           onClick={(e) => {
@@ -74,15 +74,16 @@ const Navbar = () => {
             setOpen(false);
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
-          className={`font-display text-lg md:text-xl tracking-wide transition-colors duration-500 ${
+          className={`font-display text-lg lg:text-xl tracking-wide transition-colors duration-500 ${
             scrolled ? 'text-kaleo-earth' : 'text-kaleo-cream'
           }`}
         >
-          Mostafa Shawkat Imran
+          <span className="hidden md:inline lg:hidden">M. S. Imran</span>
+          <span className="md:hidden lg:inline">Mostafa Shawkat Imran</span>
         </a>
 
         {/* Desktop Links */}
-        <ul className="hidden md:flex items-center gap-7">
+        <ul className="hidden lg:flex items-center gap-4 xl:gap-7">
           {navConfig.items.map((item) => (
             <li key={item.target}>
               <a
@@ -98,11 +99,11 @@ const Navbar = () => {
 
         {/* Language Switcher + Mobile Toggle */}
         <div className="flex items-center gap-3">
-          <div className={`hidden md:block ${scrolled ? 'border-kaleo-earth/20' : 'border-kaleo-cream/20'}`}>
+          <div className={`hidden lg:block ${scrolled ? 'border-kaleo-earth/20' : 'border-kaleo-cream/20'}`}>
             <LanguageSwitcher className={scrolled ? 'border-kaleo-earth/20' : 'border-kaleo-cream/20'} />
           </div>
           <button
-            className={`md:hidden transition-colors duration-500 ${scrolled ? 'text-kaleo-earth' : 'text-kaleo-cream'}`}
+            className={`lg:hidden p-2.5 -mr-2.5 transition-colors duration-500 ${scrolled ? 'text-kaleo-earth' : 'text-kaleo-cream'}`}
             onClick={() => setOpen(!open)}
             aria-label="Toggle navigation"
           >
@@ -111,9 +112,9 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile / Tablet Menu */}
       <div
-        className={`md:hidden overflow-hidden transition-all duration-500 ${
+        className={`lg:hidden overflow-hidden transition-all duration-500 ${
           open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         } ${scrolled ? 'bg-kaleo-sand/95' : 'bg-kaleo-charcoal/80'} backdrop-blur-md`}
       >
