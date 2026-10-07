@@ -54,11 +54,11 @@ const projects: Project[] = [
     },
   },
   {
-    image: '/card-medical.webp',
+    image: '/project-manifold.webp',
     imageAlt: {
-      en: 'Hospital oxygen manifold and medical gas pipeline system',
-      bn: 'হাসপাতালের অক্সিজেন ম্যানিফোল্ড ও মেডিকেল গ্যাস পাইপলাইন সিস্টেম',
-      id: 'Sistem manifold oksigen dan perpipaan gas medis rumah sakit',
+      en: 'Oxygen cylinder manifold room with automatic changeover panel',
+      bn: 'অটোমেটিক চেঞ্জওভার প্যানেলসহ অক্সিজেন সিলিন্ডার ম্যানিফোল্ড রুম',
+      id: 'Ruang manifold silinder oksigen dengan panel changeover otomatis',
     },
     year: '2023',
     title: {
@@ -70,6 +70,44 @@ const projects: Project[] = [
       en: 'Oxygen manifold & medical gas connectivity across 20+ health facilities with Save the Children.',
       bn: 'সেভ দ্য চিলড্রেনের সাথে ২০+ স্বাস্থ্য প্রতিষ্ঠানে অক্সিজেন ম্যানিফোল্ড ও মেডিকেল গ্যাস সংযোগ।',
       id: 'Oxygen manifold & konektivitas gas medis di 20+ fasilitas kesehatan bersama Save the Children.',
+    },
+  },
+  {
+    image: '/project-masco.webp',
+    imageAlt: {
+      en: 'Rooftop duct silencers and acoustic louvers of an industrial sound attenuation installation',
+      bn: 'শিল্প শব্দ নিরোধ বসানোর রুফটপ ডাক্ট সাইলেন্সার ও অ্যাকুস্টিক লুভার',
+      id: 'Silencer duct rooftop dan louver akustik instalasi atenuasi suara industri',
+    },
+    year: '2026',
+    title: {
+      en: 'Industrial Sound Attenuation — MASCO',
+      bn: 'শিল্প শব্দ নিরোধ — MASCO',
+      id: 'Atenuasi Suara Industri — MASCO',
+    },
+    result: {
+      en: 'Rooftop duct silencers, acoustic louvers and blower-room attenuation for an industrial facility.',
+      bn: 'শিল্প প্রতিষ্ঠানের জন্য রুফটপ ডাক্ট সাইলেন্সার, অ্যাকুস্টিক লুভার ও ব্লোয়ার-রুম অ্যাটেনুয়েশন।',
+      id: 'Silencer duct rooftop, louver akustik dan atenuasi ruang blower untuk fasilitas industri.',
+    },
+  },
+  {
+    image: '/project-btcl-noc.webp',
+    imageAlt: {
+      en: 'National operations center control room with video wall and operator team',
+      bn: 'ভিডিও ওয়াল ও অপারেটর টিমসহ জাতীয় অপারেশনস সেন্টার নিয়ন্ত্রণ কক্ষ',
+      id: 'Ruang kontrol pusat operasi nasional dengan video wall dan tim operator',
+    },
+    year: '2020',
+    title: {
+      en: 'National Operations Center — BTCL',
+      bn: 'জাতীয় অপারেশনস সেন্টার — BTCL',
+      id: 'Pusat Operasi Nasional — BTCL',
+    },
+    result: {
+      en: 'NOC fit-out with video wall, operator consoles and team training for the national telecom operator.',
+      bn: 'জাতীয় টেলিকম অপারেটরের জন্য ভিডিও ওয়াল, অপারেটর কনসোল ও টিম প্রশিক্ষণসহ NOC স্থাপন।',
+      id: 'Pemasangan NOC dengan video wall, konsol operator dan pelatihan tim untuk operator telekomunikasi nasional.',
     },
   },
 ];

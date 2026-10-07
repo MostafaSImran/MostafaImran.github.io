@@ -8,7 +8,7 @@ import SendInquiryButton from '../components/SendInquiryButton';
 gsap.registerPlugin(ScrollTrigger);
 
 const ProductFeature = () => {
-  const { content: { product: productConfig } } = useContent();
+  const { content: { product: productConfig }, lang } = useContent();
   const sectionRef = useRef<HTMLDivElement>(null);
   const headerRef = useRef<HTMLDivElement>(null);
   const imageContainerRef = useRef<HTMLDivElement>(null);
@@ -128,6 +128,31 @@ const ProductFeature = () => {
             />
           </div>
         </div>
+
+        {/* Real Build Photo */}
+        <figure className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center mt-10 md:mt-12">
+          <div className="md:col-span-8 overflow-hidden rounded-3xl">
+            <img
+              src="/capsule-build.webp"
+              alt={
+                lang === 'bn'
+                  ? 'ইকোনেস্ট ক্যাপসুল কাঠামোর প্রকৃত স্টিল ফ্রেম ফ্যাব্রিকেশন'
+                  : lang === 'id'
+                    ? 'Fabrikasi baja rangka asli struktur kapsul EcoNest'
+                    : 'Actual steel-frame fabrication of the EcoNest capsule structure'
+              }
+              loading="lazy"
+              className="w-full aspect-[16/9] object-cover"
+            />
+          </div>
+          <figcaption className="md:col-span-4 font-body text-sm text-kaleo-earth/60 leading-relaxed">
+            {lang === 'bn'
+              ? 'ছবি: ইকোনেস্ট ক্যাপসুল হোমের প্রকৃত স্টিল ফ্রেম ফ্যাব্রিকেশন — ওয়ার্কশপে হাতে তৈরি কাঠামো।'
+              : lang === 'id'
+                ? 'Foto: fabrikasi baja rangka asli EcoNest Capsule Home — struktur rakitan tangan di bengkel.'
+                : 'Photo: actual steel-frame fabrication of the EcoNest capsule home — hand-built structure in the workshop.'}
+          </figcaption>
+        </figure>
 
         {/* Text Content */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 mt-14 md:mt-20">
