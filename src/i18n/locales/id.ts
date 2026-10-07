@@ -5,7 +5,7 @@ export const id: Content = {
     language: 'id',
     siteName: 'Mostafa Shawkat Imran — Insinyur Mekanikal Senior',
     siteDescription:
-      'Insinyur Mekanikal Senior, Spesialis Berpelatihan ASME dan Konsultan Teknik yang berbasis di Dhaka, Bangladesh — desain boiler, pressure vessel, perpipaan hidrogen, sistem gas medis dan energi berkelanjutan.',
+      'Insinyur Mekanikal Senior dan Konsultan Teknik yang berbasis di Dhaka, Bangladesh — telah menyelesaikan kursus pengembangan profesional terakreditasi ASME; desain boiler, pressure vessel, perpipaan hidrogen, sistem gas medis dan energi berkelanjutan.',
   },
   nav: {
     brand: 'Mostafa Shawkat Imran',
@@ -22,7 +22,7 @@ export const id: Content = {
     backgroundImage: '/hero-bg.webp',
     backgroundAlt: 'Pembangkit listrik industri dengan bejana boiler dan perpipaan baja pada golden hour',
     title: 'Mostafa Shawkat Imran',
-    subtitle: 'Insinyur Mekanikal Senior · Berpelatihan ASME · Konsultan',
+    subtitle: 'Insinyur Mekanikal Senior · Lulus Kursus PD Terakreditasi ASME · Konsultan',
   },
   narrative: {
     line1: 'Teknik yang menggerakkan industri, layanan kesehatan dan pertumbuhan berkelanjutan.',

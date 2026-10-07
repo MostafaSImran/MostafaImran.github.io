@@ -32,7 +32,7 @@ export const siteConfig: SiteConfig = {
   language: "en",
   siteName: "Mostafa Shawkat Imran — Senior Mechanical Engineer",
   siteDescription:
-    "Senior Mechanical Engineer, ASME-trained specialist and engineering consultant based in Dhaka, Bangladesh — boiler design, pressure vessels, hydrogen piping, medical gas systems and sustainable energy.",
+    "Senior Mechanical Engineer and engineering consultant based in Dhaka, Bangladesh — completed ASME-accredited professional development courses; boiler design, pressure vessels, hydrogen piping, medical gas systems and sustainable energy.",
 };
 
 // Hero Section
@@ -47,7 +47,7 @@ export const heroConfig: HeroConfig = {
   backgroundImage: "/hero-bg.webp",
   backgroundAlt: "Industrial power plant with boiler vessels and steel piping at golden hour",
   title: "Mostafa Shawkat Imran",
-  subtitle: "Senior Mechanical Engineer · ASME-trained · Consultant",
+  subtitle: "Senior Mechanical Engineer · Completed ASME-Accredited PD Courses · Consultant",
 };
 
 // Narrative Text Section
