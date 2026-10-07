@@ -27,7 +27,7 @@ export const id: Content = {
   narrative: {
     line1: 'Teknik yang menggerakkan industri, layanan kesehatan dan pertumbuhan berkelanjutan.',
     line2: 'Dua dekade pengalaman desain elektromekanikal, kode boiler dan inovasi kolaboratif di seluruh Bangladesh.',
-    line3: 'Saya sedang mencari peluang Ph.D. di bidang Manajemen Teknik di universitas terkemuka — memajukan inovasi kolaboratif, otomatisasi industri dan infrastruktur berkelanjutan, dengan mengintegrasikan teknik, strategi bisnis dan transformasi digital demi pertumbuhan industri kelas dunia.',
+    line3: 'Sekarang menjalankan konsultasi melalui NSP (Dhaka) dan PT Sun Moon Ecosystem (Jakarta) — validasi MEP layanan kesehatan, audit energi industri, pemeliharaan infrastruktur telekomunikasi dan keahlian kode boiler, dikerjakan sesuai standar internasional.',
   },
   cards: {
     sectionTitle: 'Bidang Keahlian',
@@ -62,10 +62,10 @@ export const id: Content = {
   breath: {
     backgroundImage: '/breath-bg.jpg',
     backgroundAlt: 'Infrastruktur perpipaan hidrogen dan pressure vessel pada senja hari',
-    title: 'Mencari Peluang Ph.D. di Manajemen Teknik',
-    subtitle: 'Terbuka untuk peluang di seluruh dunia',
+    title: 'Konsultasi Lintas Batas',
+    subtitle: 'Dhaka · Jakarta · Seluruh Dunia',
     description:
-      'Saya aktif mencari posisi doktoral di Manajemen Teknik di universitas terkemuka — membawa dua dekade pengalaman lapangan menuju riset tentang inovasi kolaboratif, otomatisasi industri dan infrastruktur berkelanjutan, dengan fokus pada otomatisasi yang terukur berbasis AI dan IoT, platform digital yang menghubungkan insinyur–produsen–UKM, serta pemberdayaan industri rumahan sebagai mesin pertumbuhan berkelanjutan.',
+      'Tersedia untuk kontrak konsultasi di seluruh dunia — validasi MEP layanan kesehatan, audit energi industri, pemeliharaan infrastruktur telekomunikasi dan keahlian kode boiler, melalui NSP di Dhaka dan PT Sun Moon Ecosystem di Jakarta.',
   },
   zigzag: {
     sectionLabel: 'Pengalaman Profesional',
@@ -197,38 +197,6 @@ export const id: Content = {
     ],
     ctaText: 'Minta Penawaran',
     ctaHref: 'tel:+8801714073604',
-  },
-  phd: {
-    sectionLabel: 'Calon Kandidat Ph.D.',
-    sectionTitle: 'Praktisi yang Siap Meneliti',
-    statementLabel: 'Pernyataan Tujuan',
-    statement:
-      'Saya adalah insinyur mekanikal bersertifikat ASME dan Fellow of the Institution of Engineers, Bangladesh, yang ingin mengubah dua puluh tahun praktik industri menjadi riset akademis yang ketat. Tujuan saya adalah Ph.D. di bidang Manajemen Teknik yang memajukan inovasi kolaboratif, otomatisasi industri dan infrastruktur berkelanjutan — bidang yang telah saya jalani, pimpin proyeknya dan publikasikan. Saya menghadirkan kepada panitia penerimaan sebuah profil yang langka: seorang praktisi yang telah mendirikan dan menjalankan firma konsultan teknik selama hampir dua dekade, membantu membentuk standar teknis nasional, dan telah menghasilkan karya ilmiah — serta kini mencari kedalaman metodologis untuk memperluas dampak itu secara global.',
-    whyMeLabel: 'Mengapa Saya',
-    whyMe: [
-      {
-        title: 'Dua Dekade Kepemimpinan Industri',
-        detail: 'Mendirikan dan memimpin Nobo Shakti Prokushal (NSP) sejak 2007, menyediakan sistem elektromekanikal, fire protection, HVAC dan gas medis di seluruh Bangladesh — dengan USAID, GIZ dan Save the Children di antara kliennya.',
-      },
-      {
-        title: 'Keahlian Tingkat Standar',
-        detail: 'Key Expert pada Proyek Pengembangan Kode Boiler Nasional (GIZ), mengintegrasikan ASME BPVC dan perpipaan hidrogen ASME B31.12 ke dalam regulasi — fasih dalam kode sekaligus kepatuhan dunia nyata.',
-      },
-      {
-        title: 'Nalar Riset yang Terbukti',
-        detail: 'Dipublikasikan pada Konferensi Internasional IEOM (2024) tentang inovasi kolaboratif yang terukur — keterampilan mengubah masalah industri menjadi pertanyaan riset telah terbukti.',
-      },
-      {
-        title: 'Jaringan Global yang Kolaboratif',
-        detail: 'Fellow IEB dan anggota ASME, NFPA, IEOM dan PMI — pengalaman mempresentasikan di depan pemangku kepentingan internasional seperti GIZ, CIOB dan RSC; pelatihan di Singapura dan Tiongkok.',
-      },
-    ],
-    interestsLabel: 'Fokus Riset',
-    interests: [
-      'Manajemen Teknik untuk transformasi digital industri',
-      'AI dan IoT untuk otomatisasi industri yang terukur',
-      'Infrastruktur berkelanjutan dan pemberdayaan UKM industri rumahan',
-    ],
   },
   services: {
     sectionLabel: 'Layanan',
@@ -438,7 +406,7 @@ export const id: Content = {
   },
   footer: {
     heading: 'Mari bangun masa depan.',
-    description: 'Terbuka untuk kolaborasi riset, kontrak konsultasi dan peluang Ph.D. dalam Manajemen Teknik, otomatisasi industri dan infrastruktur berkelanjutan.',
+    description: 'Terbuka untuk kontrak konsultasi dan kolaborasi riset dalam Manajemen Teknik, otomatisasi industri dan infrastruktur berkelanjutan.',
     ctaText: '',
     contact: [
       { type: 'email', label: 'mostafa@noboshaktiprokushal.com', value: 'mostafa@noboshaktiprokushal.com', href: 'mailto:mostafa@noboshaktiprokushal.com' },

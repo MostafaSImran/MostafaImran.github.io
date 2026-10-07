@@ -62,7 +62,7 @@ export const narrativeTextConfig: NarrativeTextConfig = {
   line2:
     "Two decades of electromechanical design, boiler codes and collaborative innovation across Bangladesh.",
   line3:
-    "Seeking a Ph.D. in Engineering Management at a leading university to advance research in collaborative innovation, industrial automation and sustainable infrastructure — integrating engineering, business strategy and digital transformation for scalable global industrial growth.",
+    "Now consulting through NSP (Dhaka) and PT Sun Moon Ecosystem (Jakarta) — healthcare MEP validation, industrial energy audits, telecom infrastructure maintenance and boiler code expertise, delivered to international standards.",
 };
 
 // Card Stack Section — Fields of practice
@@ -123,10 +123,10 @@ export interface BreathSectionConfig {
 export const breathSectionConfig: BreathSectionConfig = {
   backgroundImage: "/breath-bg.jpg",
   backgroundAlt: "Hydrogen pipeline infrastructure and pressure vessels at dusk",
-  title: "Seeking a Ph.D. in Engineering Management",
-  subtitle: "Open to Opportunities Worldwide",
+  title: "Consulting Across Borders",
+  subtitle: "Dhaka · Jakarta · Worldwide",
   description:
-    "I am actively seeking a doctoral position in Engineering Management at a leading university — bringing two decades of hands-on industry experience to research in collaborative innovation, industrial automation and sustainable infrastructure, with a focus on AI and IoT for scalable automation, digital platforms that connect engineers, manufacturers and SMEs, and cottage industries as engines of sustainable growth.",
+    "Available for consultancy engagements worldwide — healthcare MEP validation, industrial energy audits, telecom infrastructure maintenance and boiler code expertise, delivered through NSP in Dhaka and PT Sun Moon Ecosystem in Jakarta.",
 };
 
 // ZigZag Grid Section — Experience
@@ -458,55 +458,6 @@ export const servicesConfig: ServicesConfig = {
   ],
 };
 
-// Ph.D. Pitch Section — Statement of purpose for admissions committees
-export interface PhdPitchConfig {
-  sectionLabel: string;
-  sectionTitle: string;
-  statementLabel: string;
-  statement: string;
-  whyMeLabel: string;
-  whyMe: { title: string; detail: string }[];
-  interestsLabel: string;
-  interests: string[];
-}
-
-export const phdPitchConfig: PhdPitchConfig = {
-  sectionLabel: "Prospective Ph.D. Candidate",
-  sectionTitle: "A Practitioner Ready to Research",
-  statementLabel: "Statement of Purpose",
-  statement:
-    "I am an ASME-certified mechanical engineer and Fellow of the Institution of Engineers, Bangladesh, seeking to transform twenty years of industrial practice into rigorous academic research. My aim is a Ph.D. in Engineering Management that advances collaborative innovation, industrial automation and sustainable infrastructure — fields I have worked in, led projects in, and published on. I bring admissions committees a rare profile: a practitioner who has founded and run an engineering consultancy for nearly two decades, helped shape national technical standards, and already produced peer-facing scholarship — and who now seeks the methodological depth to scale that impact globally.",
-  whyMeLabel: "Why Me",
-  whyMe: [
-    {
-      title: "Two Decades of Industry Leadership",
-      detail:
-        "Founded and lead Nobo Shakti Prokushal (NSP) since 2007, delivering electromechanical, fire protection, HVAC and medical gas systems across Bangladesh — with USAID, GIZ and Save the Children among its clients.",
-    },
-    {
-      title: "Standards-Level Expertise",
-      detail:
-        "Key Expert on the national Boiler Code Development Project (GIZ), integrating ASME BPVC and ASME B31.12 hydrogen piping into regulation — fluent in both codes and real-world compliance.",
-    },
-    {
-      title: "A Proven Research Instinct",
-      detail:
-        "Published at the IEOM International Conference (2024) on scalable collaborative innovation — already framing industry problems as research questions with practical, testable answers.",
-    },
-    {
-      title: "A Global, Collaborative Network",
-      detail:
-        "Fellow of IEB and member of ASME, NFPA, IEOM and PMI — experienced presenting to international stakeholders from GIZ, CIOB and RSC, with training across Singapore and China.",
-    },
-  ],
-  interestsLabel: "Research Focus",
-  interests: [
-    "Engineering Management for Digital Transformation in Industry",
-    "AI & IoT for Scalable Industrial Automation",
-    "Sustainable Infrastructure & SME Cottage Industry Expansion",
-  ],
-};
-
 // Product Showcase — EcoNest capsule home
 export interface ProductConfig {
   sectionLabel: string;
@@ -730,7 +681,7 @@ export interface FooterConfig {
 export const footerConfig: FooterConfig = {
   heading: "Let's build what's next.",
   description:
-    "Open to research collaboration, consultancy engagements and Ph.D. opportunities in engineering management, industrial automation and sustainable infrastructure.",
+    "Open to consultancy engagements and research collaboration in engineering management, industrial automation and sustainable infrastructure.",
   ctaText: "",
   contact: [
     {

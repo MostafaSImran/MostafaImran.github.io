@@ -10,7 +10,6 @@ import type {
   ProductConfig,
   SoundPodConfig,
   ServicesConfig,
-  PhdPitchConfig,
   CredentialsConfig,
   ResearchConfig,
   PublicationsConfig,
@@ -29,7 +28,6 @@ export interface Content {
   scania: ScaniaConfig;
   product: ProductConfig;
   soundpod: SoundPodConfig;
-  phd: PhdPitchConfig;
   services: ServicesConfig;
   credentials: CredentialsConfig;
   research: ResearchConfig;

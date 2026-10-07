@@ -10,7 +10,6 @@ import Hero from '../sections/Hero';
 import NarrativeText from '../sections/NarrativeText';
 import CardStack from '../sections/CardStack';
 import BreathSection from '../sections/BreathSection';
-import PhdPitch from '../sections/PhdPitch';
 import Services from '../sections/Services';
 import ZigZagGrid from '../sections/ZigZagGrid';
 import ScaniaFeature from '../sections/ScaniaFeature';
@@ -69,9 +68,6 @@ export default function Home() {
 
       {/* BREATH Video Mask Section */}
       <BreathSection />
-
-      {/* Prospective Ph.D. Candidate Pitch */}
-      <PhdPitch />
 
       {/* Services Section */}
       <div id="services">
