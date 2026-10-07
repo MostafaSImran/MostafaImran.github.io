@@ -3,6 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Home, Download } from 'lucide-react';
 import { useContent } from '../i18n/LanguageContext';
+import SendInquiryButton from '../components/SendInquiryButton';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -150,6 +151,7 @@ const ProductFeature = () => {
               {productConfig.ctaText}
             </a>
             <p className="font-body text-xs text-kaleo-earth/40 mt-3">{productConfig.ctaFileLabel}</p>
+            <SendInquiryButton segment="econest" variant="outline" className="mt-6" />
           </div>
 
           {/* Highlights */}

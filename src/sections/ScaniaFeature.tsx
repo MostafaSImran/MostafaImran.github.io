@@ -3,6 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Sparkles } from 'lucide-react';
 import { useContent } from '../i18n/LanguageContext';
+import SendInquiryButton from '../components/SendInquiryButton';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -144,6 +145,7 @@ const ScaniaFeature = () => {
               {scaniaConfig.description}
             </p>
             <div className="w-16 h-px bg-kaleo-terracotta/30 mt-8" />
+            <SendInquiryButton segment="bus-body" variant="outline" className="mt-8" />
           </div>
 
           {/* Highlights */}

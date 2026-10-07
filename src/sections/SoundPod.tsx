@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Volume2, Phone, Check } from 'lucide-react';
 import { type SoundPodModel } from '../config';
 import { useContent } from '../i18n/LanguageContext';
+import SendInquiryButton from '../components/SendInquiryButton';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -211,6 +212,9 @@ const SoundPod = () => {
             <Phone className="w-4 h-4" />
             {soundpodConfig.ctaText}
           </a>
+          <div className="mt-4">
+            <SendInquiryButton segment="soundpod" />
+          </div>
         </div>
       </div>
     </section>

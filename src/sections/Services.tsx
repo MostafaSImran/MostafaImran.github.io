@@ -4,22 +4,13 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ClipboardCheck, Phone, MessageCircle } from 'lucide-react';
 import { type ServiceItem } from '../config';
 import { useContent } from '../i18n/LanguageContext';
+import { openInquiry } from '../i18n/inquiry';
 import type { Language } from '../i18n/types';
 
-const WHATSAPP_NUMBER = '8801714073604';
-
-const inquiryLabel: Record<Language, string> = {
-  en: 'WhatsApp Inquiry',
-  bn: 'হোয়াটসঅ্যাপে জানান',
-  id: 'Tanya via WhatsApp',
-};
-
-const inquiryText = (lang: Language, service: string): string => {
-  if (lang === 'bn')
-    return `আসসালামু আলাইকুম, আমি আপনার ওয়েবসাইট দেখেছি এবং এই সেবায় আগ্রহী: ${service}। বিস্তারিত জানতে আপনার সাথে যোগাযোগ করতে চাই।`;
-  if (lang === 'id')
-    return `Halo Pak Mostafa, saya menemukan situs web Anda dan tertarik dengan layanan: ${service}. Mohon hubungi saya untuk detail lebih lanjut.`;
-  return `Hello Mostafa, I found your website and I'm interested in your service: ${service}. Please contact me with more details.`;
+const inquiryButtonLabel: Record<Language, string> = {
+  en: 'Send Inquiry',
+  bn: 'অনুসন্ধান পাঠান',
+  id: 'Kirim Permintaan',
 };
 
 gsap.registerPlugin(ScrollTrigger);
@@ -122,15 +113,13 @@ const ServiceCard = ({ service, index }: { service: ServiceItem; index: number }
           <Phone className="w-4 h-4" />
           {service.ctaText}
         </a>
-        <a
-          href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(inquiryText(lang, service.title))}`}
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          onClick={() => openInquiry(service.id)}
           className="inline-flex items-center justify-center gap-2 font-body text-sm uppercase tracking-wider text-kaleo-cream bg-kaleo-terracotta border border-kaleo-terracotta rounded-full px-6 py-3.5 hover:bg-kaleo-earth hover:border-kaleo-earth transition-all"
         >
           <MessageCircle className="w-4 h-4" />
-          {inquiryLabel[lang]}
-        </a>
+          {inquiryButtonLabel[lang]}
+        </button>
       </div>
     </div>
   );

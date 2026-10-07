@@ -15,11 +15,13 @@ import ZigZagGrid from '../sections/ZigZagGrid';
 import ScaniaFeature from '../sections/ScaniaFeature';
 import ProductFeature from '../sections/ProductFeature';
 import SoundPod from '../sections/SoundPod';
+import PlanYourProject from '../sections/PlanYourProject';
 import Credentials from '../sections/Credentials';
 import Research from '../sections/Research';
 import Publications from '../sections/Publications';
 import Footer from '../sections/Footer';
 import FloatingActions from '../sections/FloatingActions';
+import InquiryModal from '../components/InquiryModal';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -89,6 +91,9 @@ export default function Home() {
       {/* Sound Pod Section */}
       <SoundPod />
 
+      {/* Plan Your Project — client guides & structured inquiry */}
+      <PlanYourProject />
+
       {/* Credentials Section */}
       <Credentials />
 
@@ -109,6 +114,9 @@ export default function Home() {
 
       {/* Floating contact bar (Call / WhatsApp / Email) */}
       <FloatingActions />
+
+      {/* Structured inquiry modal (opens from services & products) */}
+      <InquiryModal />
     </div>
   );
 }
