@@ -22,7 +22,7 @@ export const id: Content = {
     backgroundImage: '/hero-bg.webp',
     backgroundAlt: 'Pembangkit listrik industri dengan bejana boiler dan perpipaan baja pada golden hour',
     title: 'Mostafa Shawkat Imran',
-    subtitle: 'Insinyur Mekanikal Senior · Lulus Kursus PD Terakreditasi ASME · Konsultan',
+    subtitle: 'Insinyur Mekanikal Senior · Insinyur Berpelatihan ASME dengan CEU/PDH Terakreditasi · Konsultan',
   },
   narrative: {
     line1: 'Teknik yang menggerakkan industri, layanan kesehatan dan pertumbuhan berkelanjutan.',

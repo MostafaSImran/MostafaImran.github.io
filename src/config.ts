@@ -47,7 +47,7 @@ export const heroConfig: HeroConfig = {
   backgroundImage: "/hero-bg.webp",
   backgroundAlt: "Industrial power plant with boiler vessels and steel piping at golden hour",
   title: "Mostafa Shawkat Imran",
-  subtitle: "Senior Mechanical Engineer · Completed ASME-Accredited PD Courses · Consultant",
+  subtitle: "Senior Mechanical Engineer · ASME-Trained Engineer with Accredited CEUs/PDHs · Consultant",
 };
 
 // Narrative Text Section
