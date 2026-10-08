@@ -354,6 +354,13 @@ export const id: Content = {
       { title: 'Penghargaan Keunggulan Teknik', detail: 'Pengembangan sistem gas medis inovatif' },
       { title: 'Kepemimpinan Energi Berkelanjutan', detail: 'Kontribusi pada pengembangan mesin bi-fuel' },
     ],
+    personalLabel: 'Pengembangan Pribadi & Pelatihan',
+    personal: [
+      {
+        title: 'Kursus Quantum Method — Pengembangan Diri & Peningkatan Diri',
+        detail: 'Yoga Foundation, Dhaka · No. Reg. 127/350',
+      },
+    ],
   },
   research: {
     sectionLabel: 'Riset & Pendidikan',
