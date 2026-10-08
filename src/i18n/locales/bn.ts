@@ -418,7 +418,7 @@ export const bn: Content = {
     description: 'ইঞ্জিনিয়ারিং ম্যানেজমেন্ট, শিল্প স্বয়ংক্রিয়করণ ও টেকসই অবকাঠামোতে পরামর্শ চুক্তি ও গবেষণা সহযোগিতার প্রতি উন্মুক্ত।',
     ctaText: '',
     contact: [
-      { type: 'email', label: 'mostafa@noboshaktiprokushal.com', value: 'mostafa@noboshaktiprokushal.com', href: 'mailto:mostafa@noboshaktiprokushal.com' },
+      { type: 'email', label: 'info@mostafasimran.com', value: 'info@mostafasimran.com', href: 'mailto:info@mostafasimran.com' },
       { type: 'phone', label: '+880 1714 073604', value: '+8801714073604', href: 'tel:+8801714073604' },
     ],
     locationLabel: 'অবস্থান',
@@ -433,7 +433,7 @@ export const bn: Content = {
     copyright: '© ২০২৬ মোস্তফা শওকত ইমরান। সর্বস্বত্ব সংরক্ষিত।',
     links: [
       { label: 'LinkedIn', href: 'https://www.linkedin.com/in/mostafa-shawkat-imran-244039b5' },
-      { label: 'ইমেইল', href: 'mailto:mostafa@noboshaktiprokushal.com' },
+      { label: 'ইমেইল', href: 'mailto:info@mostafasimran.com' },
     ],
   },
 };

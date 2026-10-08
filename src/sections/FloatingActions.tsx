@@ -6,7 +6,7 @@ import type { Language } from '../i18n/types';
 const PHONE_DISPLAY = '+880 1714 073604';
 const PHONE_TEL = 'tel:+8801714073604';
 const WHATSAPP = 'https://wa.me/8801714073604';
-const EMAIL = 'mailto:mostafa@noboshaktiprokushal.com';
+const EMAIL = 'mailto:info@mostafasimran.com';
 
 const labels: Record<Language, { call: string; whatsapp: string; email: string }> = {
   en: { call: 'Call Now', whatsapp: 'WhatsApp', email: 'Email' },

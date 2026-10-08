@@ -695,9 +695,9 @@ export const footerConfig: FooterConfig = {
   contact: [
     {
       type: "email",
-      label: "mostafa@noboshaktiprokushal.com",
-      value: "mostafa@noboshaktiprokushal.com",
-      href: "mailto:mostafa@noboshaktiprokushal.com",
+      label: "info@mostafasimran.com",
+      value: "info@mostafasimran.com",
+      href: "mailto:info@mostafasimran.com",
     },
     {
       type: "phone",
@@ -729,6 +729,6 @@ export const footerConfig: FooterConfig = {
   copyright: "© 2026 Mostafa Shawkat Imran. All rights reserved.",
   links: [
     { label: "LinkedIn", href: "https://www.linkedin.com/in/mostafa-shawkat-imran-244039b5" },
-    { label: "Email", href: "mailto:mostafa@noboshaktiprokushal.com" },
+    { label: "Email", href: "mailto:info@mostafasimran.com" },
   ],
 };

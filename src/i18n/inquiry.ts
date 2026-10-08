@@ -4,7 +4,7 @@
 import type { Language } from './types';
 
 export const WHATSAPP_NUMBER = '8801714073604';
-export const CONTACT_EMAIL = 'mostafa@noboshaktiprokushal.com';
+export const CONTACT_EMAIL = 'info@mostafasimran.com';
 
 export type InquiryFieldType = 'text' | 'number' | 'date' | 'textarea' | 'select';
 

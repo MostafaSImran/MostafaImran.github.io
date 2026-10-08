@@ -418,7 +418,7 @@ export const id: Content = {
     description: 'Terbuka untuk kontrak konsultasi dan kolaborasi riset dalam Manajemen Teknik, otomatisasi industri dan infrastruktur berkelanjutan.',
     ctaText: '',
     contact: [
-      { type: 'email', label: 'mostafa@noboshaktiprokushal.com', value: 'mostafa@noboshaktiprokushal.com', href: 'mailto:mostafa@noboshaktiprokushal.com' },
+      { type: 'email', label: 'info@mostafasimran.com', value: 'info@mostafasimran.com', href: 'mailto:info@mostafasimran.com' },
       { type: 'phone', label: '+880 1714 073604', value: '+8801714073604', href: 'tel:+8801714073604' },
     ],
     locationLabel: 'Lokasi',
@@ -433,7 +433,7 @@ export const id: Content = {
     copyright: '© 2026 Mostafa Shawkat Imran. Seluruh hak cipta dilindungi.',
     links: [
       { label: 'LinkedIn', href: 'https://www.linkedin.com/in/mostafa-shawkat-imran-244039b5' },
-      { label: 'Email', href: 'mailto:mostafa@noboshaktiprokushal.com' },
+      { label: 'Email', href: 'mailto:info@mostafasimran.com' },
     ],
   },
 };
