@@ -24,6 +24,176 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: 'boiler-design-manufacturing-asme-bpvc',
+    title: 'Boiler Design and Manufacturing under ASME BPVC Standards',
+    metaTitle: 'Boiler Design & Manufacturing under ASME BPVC Standards — M. S. Imran',
+    metaDescription:
+      'How ASME BPVC governs boiler design and manufacturing: Sections I, IV, VI, VII, II, VIII, IX and XIII, welding qualifications, NDT, the S and H stamps, and why certification matters for global projects.',
+    excerpt:
+      'The ASME Boiler and Pressure Vessel Code is the global benchmark for boiler construction. A practical walk through the sections that matter, from material selection to the S and H stamps.',
+    date: '2026-10-09',
+    readMinutes: 5,
+    tags: ['ASME BPVC', 'Boilers', 'Pressure Vessels'],
+    image: '/card-boiler.webp',
+    imageAlt: 'Industrial boiler and fuel handling plant with steel piping',
+    blocks: [
+      {
+        type: 'p',
+        text: 'Boilers are critical components in power generation, industrial processing and heating applications — and their design and manufacturing must ensure safety, reliability and efficiency above all. The ASME Boiler and Pressure Vessel Code (BPVC) is the globally recognized standard governing the construction, inspection and certification of boilers and pressure vessels. Updated every two years, the BPVC provides comprehensive rules that safeguard against failures and accidents, and compliance with it is increasingly expected of any serious industrial project in Bangladesh and abroad.',
+      },
+      { type: 'h2', text: 'Key ASME BPVC sections for boilers' },
+      {
+        type: 'ul',
+        items: [
+          'Section I — Rules for Construction of Power Boilers: design, materials, fabrication, inspection and testing of high-pressure steam boilers used in power plants.',
+          'Section IV — Rules for Construction of Heating Boilers: low-pressure heating boilers for residential and commercial use.',
+          'Section VI — Recommended Rules for Care and Operation of Heating Boilers: guidelines for safe operation and maintenance.',
+          'Section VII — Recommended Guidelines for Care of Power Boilers: operational safety and inspection practices for power boilers.',
+        ],
+      },
+      { type: 'h2', text: 'Design principles' },
+      {
+        type: 'p',
+        text: 'Material selection. Boiler steels must comply with ASME Section II material specifications, with tensile strength, creep resistance and corrosion resistance as the decisive properties for long service life.',
+      },
+      {
+        type: 'p',
+        text: 'Stress analysis. Section VIII together with Section II Part D provide the stress tables and design formulas that underpin pressure-part sizing, and finite element analysis is now routinely used to validate complex geometries.',
+      },
+      {
+        type: 'p',
+        text: 'Safety factors. Designs incorporate margins for pressure, temperature and fatigue loading, while overpressure protection is governed by Section XIII.',
+      },
+      {
+        type: 'p',
+        text: 'Welding and fabrication. Section IX specifies welding qualifications and procedures, and heat treatment with non-destructive testing (NDT) confirms the integrity of every critical joint.',
+      },
+      { type: 'h2', text: 'Manufacturing practices' },
+      {
+        type: 'ul',
+        items: [
+          'Fabrication: cutting, rolling and welding of boiler shells and tubes must follow ASME-approved procedures.',
+          'Inspection: Authorized Inspectors verify compliance through hydrostatic tests, radiographic examinations and dimensional checks.',
+          'Certification: manufacturers must hold the ASME “S” Stamp for power boilers or the “H” Stamp for heating boilers.',
+          'Documentation: data reports and material certificates are mandatory for traceability.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'In boiler manufacturing, documentation is not paperwork — it is the proof that the certificate on the nameplate is true.',
+      },
+      { type: 'h2', text: 'Why BPVC compliance matters globally' },
+      {
+        type: 'ul',
+        items: [
+          'Safety assurance: BPVC compliance reduces the risk of catastrophic failures.',
+          'Market access: ASME certification is frequently a precondition for international projects and export supply.',
+          'Sustainability: modern BPVC editions incorporate efficiency improvements and support integration with renewable energy systems.',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Boiler design and manufacturing under ASME BPVC standards is not just about compliance — it is about ensuring long-term safety, operational reliability and global acceptance. For industries in Bangladesh and beyond, adopting BPVC positions projects at par with international best practice. As Key Expert on the national Boiler Code development project with GIZ, this is exactly the standard we are working to embed in national regulation.',
+      },
+    ],
+  },
+  {
+    slug: 'remote-monitoring-system-rms-maintenance',
+    title: 'Keeping Smart Grids Connected: A Practical Guide to RMS Maintenance',
+    metaTitle: 'Keeping Smart Grids Connected — Remote Monitoring System (RMS) Maintenance — M. S. Imran',
+    metaDescription:
+      'Why remote monitoring system maintenance matters for smart grids: hardware inspections, power supply health, firmware and cybersecurity patching, sensor calibration, loop testing and long-term reliability practices.',
+    excerpt:
+      'An RMS is only as good as its uptime. What proactive maintenance of remote monitoring systems looks like — from cabinet seals to firmware patches to sensor calibration.',
+    date: '2026-10-09',
+    readMinutes: 6,
+    tags: ['Smart Grid', 'Remote Monitoring', 'Maintenance'],
+    image: '/project-btcl-noc.webp',
+    imageAlt: 'National operations center control room with video wall and operator team monitoring the network',
+    blocks: [
+      {
+        type: 'p',
+        text: 'In today’s rapidly evolving energy landscape, the efficiency and reliability of power distribution networks depend heavily on advanced monitoring technology. At the heart of this digital transformation is the Remote Monitoring System (RMS). RMS units act as the eyes and ears of utility operators, providing real-time data on asset health, grid performance and potential anomalies.',
+      },
+      {
+        type: 'p',
+        text: 'However, even the most sophisticated monitoring infrastructure requires proactive care. Without a solid maintenance strategy, RMS units can experience data drift, communication dropouts and hardware degradation — ultimately leaving operators blind when they need visibility the most. Here is why RMS maintenance matters, the pillars of a robust program, and the practices that keep a monitoring network resilient.',
+      },
+      { type: 'h2', text: 'Why RMS maintenance matters' },
+      {
+        type: 'p',
+        text: 'An RMS is only as good as its uptime. When a unit fails or transmits inaccurate data, the consequences cascade through the entire operational chain:',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Delayed fault detection: inaccurate telemetry or offline remote terminals delay the identification of outages or equipment overheating.',
+          'Compromised data integrity: faulty sensors or uncalibrated inputs trigger false alarms or miss critical warnings, wasting field crew resources.',
+          'Shorter asset lifespan: neglected hardware exposed to harsh outdoor environments fails prematurely, leading to costly replacements.',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Regular maintenance shifts operations from a reactive break-fix model to a proactive, reliability-centred approach.',
+      },
+      { type: 'h2', text: 'Pillar 1 — Hardware inspections and environmental hardening' },
+      {
+        type: 'p',
+        text: 'RMS units are frequently deployed in harsh outdoor substations, remote poles or industrial enclosures where they face extreme temperatures, humidity and vibration:',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Physical checks: inspect cabinet seals, air filters and cooling fans to prevent dust ingress and overheating.',
+          'Power supply health: regularly test backup batteries, UPS units and solar chargers — battery degradation is a leading cause of unexpected RMS failure during grid outages.',
+          'Wiring and connections: check for loose terminal blocks, corrosion and water ingress caused by weather exposure.',
+        ],
+      },
+      { type: 'h2', text: 'Pillar 2 — Firmware and software updates' },
+      {
+        type: 'p',
+        text: 'Cybersecurity threats and software obsolescence pose real risks to remote monitoring nodes:',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Security patching: keep firmware and operating systems updated to protect against vulnerabilities and unauthorized access.',
+          'Configuration management: maintain strict version control of device configurations so field replacements can be reconfigured rapidly.',
+          'Data synchronization: verify time synchronization via NTP or GPS across all nodes to ensure accurate Sequence of Events (SOE) logging.',
+        ],
+      },
+      { type: 'h2', text: 'Pillar 3 — Sensor calibration and loop testing' },
+      {
+        type: 'p',
+        text: 'Data accuracy is non-negotiable when making critical switching or load-balancing decisions:',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Analog input calibration: periodically compare RMS telemetry readings — voltage, current, temperature — against calibrated reference instruments.',
+          'Communication link verification: test primary and secondary communication paths, whether cellular, fibre optic or radio, for low latency and high packet delivery ratios.',
+        ],
+      },
+      { type: 'h2', text: 'Best practices for long-term reliability' },
+      {
+        type: 'ul',
+        items: [
+          'Implement automated health polling: heartbeat signals and polling checks from the central SCADA or master station should alert engineers immediately when an RMS goes offline.',
+          'Establish a seasonal checklist: tailor maintenance to climate shifts — preparing batteries for cold weather, ensuring adequate cooling ahead of peak summer loads.',
+          'Empower field technicians: equip crews with standardized diagnostic tools and clear documentation to troubleshoot communication faults on-site quickly.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'A remote monitoring system is the backbone of modern, intelligent infrastructure — but only if someone is maintaining the backbone.',
+      },
+      {
+        type: 'p',
+        text: 'By investing in a structured, proactive maintenance routine, utilities protect their networks against unexpected downtime, secure data integrity and keep uninterrupted visibility over critical assets. If your team is reassessing its monitoring maintenance strategy — across power, gas or industrial networks — our engineers at NSP and PT Sun Moon Ecosystem are glad to review it with you.',
+      },
+    ],
+  },
+  {
     slug: 'asme-b31-12-hydrogen-pipeline-design',
     title: 'ASME B31.12: Hydrogen Pipeline Design Essentials',
     metaTitle: 'ASME B31.12 Hydrogen Pipeline Design Essentials — M. S. Imran',
