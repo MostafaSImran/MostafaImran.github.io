@@ -154,8 +154,11 @@ const Hero = () => {
         {/* Role */}
         <p
           ref={subtitleRef}
-          className="font-body text-kaleo-terracotta text-sm md:text-base uppercase tracking-[0.3em] mt-6 text-center"
-          style={{ willChange: 'transform, opacity' }}
+          className="font-body font-semibold text-kaleo-cream text-sm md:text-lg uppercase tracking-[0.15em] mt-6 text-center px-4"
+          style={{
+            textShadow: '0 2px 10px rgba(0,0,0,0.65), 0 0 2px rgba(0,0,0,0.5)',
+            willChange: 'transform, opacity'
+          }}
         >
           {heroConfig.role}
         </p>
