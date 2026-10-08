@@ -340,8 +340,8 @@ export const articles: Article[] = [
     date: '2026-10-09',
     readMinutes: 5,
     tags: ['HFO', 'Thermal Systems', 'Power Plants'],
-    image: '/card-boiler.webp',
-    imageAlt: 'Industrial boiler and fuel handling plant with steel piping',
+    image: '/insight-hfo-system.webp',
+    imageAlt: 'Cutaway diagram of an HFO thermal processing system showing the fuel oil heater, tube bundle, expansion tank and pumps',
     blocks: [
       {
         type: 'p',
