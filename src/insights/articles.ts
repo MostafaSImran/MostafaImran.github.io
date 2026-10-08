@@ -108,8 +108,8 @@ export const articles: Article[] = [
     date: '2026-10-09',
     readMinutes: 6,
     tags: ['Smart Grid', 'Remote Monitoring', 'Maintenance'],
-    image: '/project-btcl-noc.webp',
-    imageAlt: 'National operations center control room with video wall and operator team monitoring the network',
+    image: '/insight-rms-monitoring.webp',
+    imageAlt: 'Digital pressure transmitters with local displays and three-valve manifolds on a metering run',
     blocks: [
       {
         type: 'p',
