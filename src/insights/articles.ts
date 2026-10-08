@@ -204,8 +204,8 @@ export const articles: Article[] = [
     date: '2026-10-09',
     readMinutes: 5,
     tags: ['ASME B31.12', 'Hydrogen', 'Piping Design'],
-    image: '/breath-bg.webp',
-    imageAlt: 'Hydrogen pipeline infrastructure and pressure vessels at dusk',
+    image: '/insight-h2-pipeline.webp',
+    imageAlt: 'Labeled schematic of a hydrogen pipeline showing welded joints, slam-shut valve, nitrogen purge connection and extra wall margin',
     blocks: [
       {
         type: 'p',
@@ -269,8 +269,8 @@ export const articles: Article[] = [
     date: '2026-10-09',
     readMinutes: 6,
     tags: ['Healthcare', 'MEP Audit', 'NFPA-99', 'DGHS'],
-    image: '/project-manifold.webp',
-    imageAlt: 'Oxygen cylinder manifold room with automatic changeover panel',
+    image: '/insight-oxygen-manifold.webp',
+    imageAlt: 'Schematic of a hospital oxygen manifold system with primary and reserve cylinder banks, changeover manifold, zone valves and master alarm panel',
     blocks: [
       {
         type: 'p',
@@ -397,8 +397,8 @@ export const articles: Article[] = [
     date: '2026-10-09',
     readMinutes: 4,
     tags: ['Medical Gas', 'NFPA-99', 'Hospital Management'],
-    image: '/medical-outlets.webp',
-    imageAlt: 'Medical gas outlets and zone valve assembly in a healthcare facility',
+    image: '/insight-medgas-zonevalve.webp',
+    imageAlt: 'Cutaway schematic of a medical gas zone valve box and gas-specific indexed outlet with area alarm panel',
     blocks: [
       {
         type: 'p',
