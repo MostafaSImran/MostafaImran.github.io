@@ -110,6 +110,44 @@ const projects: Project[] = [
       id: 'Pemasangan NOC dengan video wall, konsol operator dan pelatihan tim untuk operator telekomunikasi nasional.',
     },
   },
+  {
+    image: '/project-sgcl-rms.webp',
+    imageAlt: {
+      en: 'Gas regulator metering station with red slam-shut valve, regulators and metering run for SGCL',
+      bn: 'SGCL-এর জন্য লাল স্লাম-শাট ভালভ, রেগুলেটর ও মিটারিং রানসহ গ্যাস রেগুলেটর মিটারিং স্টেশন',
+      id: 'Stasiun pengatur dan pengukur gas dengan katup slam-shut merah, regulator dan metering run untuk SGCL',
+    },
+    year: '2026',
+    title: {
+      en: 'Gas Regulator Metering Station — SGCL',
+      bn: 'গ্যাস রেগুলেটর মিটারিং স্টেশন — SGCL',
+      id: 'Stasiun Pengatur & Pengukur Gas — SGCL',
+    },
+    result: {
+      en: 'Pressure regulation, slam-shut safety and metering train for Sundarban Gas Company Ltd (SGCL) — regulator metering station (RMS).',
+      bn: 'সুন্দরবন গ্যাস কোম্পানি লিমিটেডের (SGCL) জন্য প্রেশার রেগুলেশন, স্লাম-শাট সেফটি ও মিটারিং ট্রেন — RMS।',
+      id: 'Regulasi tekanan, keselamatan slam-shut dan rangkaian pengukuran untuk Sundarban Gas Company Ltd (SGCL) — stasiun RMS.',
+    },
+  },
+  {
+    image: '/project-sgcl-metering.webp',
+    imageAlt: {
+      en: 'Metering skid with filter separators, instrumentation and control valves at an SGCL regulator metering station',
+      bn: 'SGCL রেগুলেটর মিটারিং স্টেশনে ফিল্টার সেপারেটর, ইনস্ট্রুমেন্টেশন ও কন্ট্রোল ভালভসহ মিটারিং স্কিড',
+      id: 'Skid pengukuran dengan filter separator, instrumen dan katup kontrol di stasiun RMS SGCL',
+    },
+    year: '2026',
+    title: {
+      en: 'RMS Metering Skid & Instrumentation — SGCL',
+      bn: 'RMS মিটারিং স্কিড ও ইনস্ট্রুমেন্টেশন — SGCL',
+      id: 'Skid Pengukuran & Instrumen RMS — SGCL',
+    },
+    result: {
+      en: 'Filter separators, metering runs, chart recorders and control valves — complete electromechanical instrumentation of an SGCL RMS.',
+      bn: 'ফিল্টার সেপারেটর, মিটারিং রান, চার্ট রেকর্ডার ও কন্ট্রোল ভালভ — SGCL RMS-এর সম্পূর্ণ ইলেক্ট্রোমেকানিক্যাল ইনস্ট্রুমেন্টেশন।',
+      id: 'Filter separator, metering run, chart recorder dan katup kontrol — instrumen elektromekanikal lengkap RMS SGCL.',
+    },
+  },
 ];
 
 const header: Record<Language, { label: string; title: string }> = {
