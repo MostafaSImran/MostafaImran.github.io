@@ -705,6 +705,12 @@ export const footerConfig: FooterConfig = {
       value: "+8801714073604",
       href: "tel:+8801714073604",
     },
+    {
+      type: "phone",
+      label: "+62 852 8130 5024",
+      value: "+6285281305024",
+      href: "tel:+6285281305024",
+    },
   ],
   locationLabel: "Based in",
   address: [],

@@ -420,6 +420,7 @@ export const bn: Content = {
     contact: [
       { type: 'email', label: 'info@mostafasimran.com', value: 'info@mostafasimran.com', href: 'mailto:info@mostafasimran.com' },
       { type: 'phone', label: '+880 1714 073604', value: '+8801714073604', href: 'tel:+8801714073604' },
+      { type: 'phone', label: '+62 852 8130 5024', value: '+6285281305024', href: 'tel:+6285281305024' },
     ],
     locationLabel: 'অবস্থান',
     address: [],
