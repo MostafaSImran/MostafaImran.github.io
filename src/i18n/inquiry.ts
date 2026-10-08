@@ -1,10 +1,12 @@
 // Structured inquiry form definitions — one per service/product segment.
-// Submissions are delivered to the owner's WhatsApp as a formatted message,
-// so no backend or third-party account is required.
+// Submissions are sent to the owner's inbox via FormSubmit (free, no account)
+// with an automatic "thank you" reply to the visitor (FormSubmit _autoresponse).
+// A WhatsApp hand-off remains available as an alternative channel.
 import type { Language } from './types';
 
 export const WHATSAPP_NUMBER = '8801714073604';
 export const CONTACT_EMAIL = 'info@mostafasimran.com';
+export const FORM_ENDPOINT = `https://formsubmit.co/${CONTACT_EMAIL}`;
 
 export type InquiryFieldType = 'text' | 'number' | 'date' | 'textarea' | 'select';
 
@@ -32,19 +34,32 @@ const L = (en: string, bn: string, id: string): Record<Language, string> => ({ e
 export const inquiryUi = {
   title: L('Project Inquiry', 'প্রকল্প অনুসন্ধান', 'Permintaan Proyek'),
   intro: L(
-    'Fill in what you know — the more detail, the faster our quote. Submitting opens WhatsApp with your details ready to send.',
-    'যা জানেন তা লিখুন — যত বিস্তারিত, তত দ্রুত আমাদের প্রস্তাব। জমা দিলে আপনার তথ্যসহ হোয়াটসঅ্যাপ খুলবে।',
-    'Isi sesuai yang Anda ketahui — semakin detail, semakin cepat penawaran kami. Mengirim akan membuka WhatsApp dengan detail Anda.'
+    'Fill in what you know — the more detail, the faster our quote. Sending delivers the inquiry to our inbox and emails you an instant confirmation.',
+    'যা জানেন তা লিখুন — যত বিস্তারিত, তত দ্রুত আমাদের প্রস্তাব। পাঠালে অনুসন্ধানটি আমাদের ইনবক্সে যাবে এবং আপনাকে তাৎক্ষণিক নিশ্চিতকরণ ইমেইল পৌঁছাবে।',
+    'Isi sesuai yang Anda ketahui — semakin detail, semakin cepat penawaran kami. Mengirim akan menyampaikan permintaan ke kotak masuk kami dan mengirimi Anda email konfirmasi seketika.'
   ),
   name: L('Your Name', 'আপনার নাম', 'Nama Anda'),
+  email: L('Email', 'ইমেইল', 'Email'),
   company: L('Company / Organization', 'প্রতিষ্ঠানের নাম', 'Perusahaan / Organisasi'),
   phone: L('Phone', 'ফোন', 'Telepon'),
-  submit: L('Send via WhatsApp', 'হোয়াটসঅ্যাপে পাঠান', 'Kirim via WhatsApp'),
-  submitEmail: L('Send via Email', 'ইমেইলে পাঠান', 'Kirim via Email'),
-  emailChoice: L('Prefer email? Corporate buyers can send the same details by email instead.', 'ইমেইলে পাঠাতে চান? এই একই তথ্য ইমেইলেও পাঠাতে পারবেন।', 'Lebih suka email? Kirim detail yang sama melalui email.'),
+  submit: L('Send Inquiry', 'অনুসন্ধান পাঠান', 'Kirim Permintaan'),
+  submitEmail: L('Send via WhatsApp', 'হোয়াটসঅ্যাপে পাঠান', 'Kirim via WhatsApp'),
+  emailChoice: L('Prefer WhatsApp? Send the same details through WhatsApp instead.', 'হোয়াটসঅ্যাপ পছন্দ? একই তথ্য হোয়াটসঅ্যাপেও পাঠাতে পারেন।', 'Lebih suka WhatsApp? Kirim detail yang sama melalui WhatsApp.'),
   cancel: L('Cancel', 'বাতিল', 'Batal'),
   requiredHint: L('Fields marked * are required.', '* চিহ্নিত ঘরগুলো আবশ্যক।', 'Kolom bertanda * wajib diisi.'),
   messageIntro: L('New website inquiry', 'ওয়েবসাইট থেকে নতুন অনুসন্ধান', 'Permintaan baru dari situs web'),
+  /** Automatic reply sent to the visitor by the form backend (FormSubmit _autoresponse). */
+  autoresponse: L(
+    'Thank you for contacting Mostafa Shawkat Imran — Nobo Shakti Prokushal (NSP), Dhaka & PT Sun Moon Ecosystem, Jakarta. Your inquiry has been received, and we will get back to you within 1–2 business days.',
+    'মোস্তফা শওকত ইমরানের সাথে যোগাযোগ করার জন্য ধন্যবাদ — নব শক্তি প্রকৌশল (NSP), ঢাকা ও পিটি সান মুন ইকোসিস্টেম, জাকার্তা। আপনার অনুসন্ধান পেয়েছি; আমরা ১–২ কর্মদিবসের মধ্যে উত্তর দেব।',
+    'Terima kasih telah menghubungi Mostafa Shawkat Imran — Nobo Shakti Prokushal (NSP), Dhaka & PT Sun Moon Ecosystem, Jakarta. Permintaan Anda telah kami terima dan akan kami balas dalam 1–2 hari kerja.'
+  ),
+  /** Toast shown when the visitor returns from the form backend after sending. */
+  sentToast: L(
+    'Thank you! Your inquiry has been sent — a confirmation email is on its way to you.',
+    'ধন্যবাদ! আপনার অনুসন্ধান পাঠানো হয়েছে — নিশ্চিতকরণ ইমেইল আপনার কাছে পৌঁছে যাচ্ছে।',
+    'Terima kasih! Permintaan Anda telah terkirim — email konfirmasi sedang menuju kotak masuk Anda.'
+  ),
 };
 
 const segments: Record<string, InquirySegment> = {

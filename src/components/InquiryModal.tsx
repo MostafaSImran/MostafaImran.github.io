@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { X, MessageCircle, Mail } from 'lucide-react';
 import { useContent } from '../i18n/LanguageContext';
-import segments, { inquiryUi, WHATSAPP_NUMBER, CONTACT_EMAIL } from '../i18n/inquiry';
+import segments, { inquiryUi, WHATSAPP_NUMBER, FORM_ENDPOINT } from '../i18n/inquiry';
 import type { InquiryField, InquirySegment } from '../i18n/inquiry';
 
 const inputClass =
@@ -78,6 +78,7 @@ const InquiryModal = () => {
   const [segmentId, setSegmentId] = useState<string | null>(null);
   const [values, setValues] = useState<Record<string, string>>({});
   const [sent, setSent] = useState(false);
+  const formRef = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
     const handler = (e: Event) => {
@@ -103,6 +104,8 @@ const InquiryModal = () => {
 
   const setValue = (key: string) => (v: string) => setValues((prev) => ({ ...prev, [key]: v }));
 
+  const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email?.trim() ?? '');
+
   const missingRequired = segment.fields.some((f) => f.required && !values[f.key]?.trim());
 
   const composeLines = (): string[] => {
@@ -112,12 +115,14 @@ const InquiryModal = () => {
       if (v) lines.push(`${f.label[lang]}: ${v}`);
     });
     if (values.name?.trim()) lines.push(`${inquiryUi.name[lang]}: ${values.name.trim()}`);
+    if (values.email?.trim()) lines.push(`${inquiryUi.email[lang]}: ${values.email.trim()}`);
     if (values.company?.trim()) lines.push(`${inquiryUi.company[lang]}: ${values.company.trim()}`);
     if (values.phone?.trim()) lines.push(`${inquiryUi.phone[lang]}: ${values.phone.trim()}`);
     return lines;
   };
 
-  const submit = () => {
+  // WhatsApp hand-off (secondary channel — opens WhatsApp with prefilled details)
+  const submitWhatsApp = () => {
     window.open(
       `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(composeLines().join('\n'))}`,
       '_blank',
@@ -126,15 +131,15 @@ const InquiryModal = () => {
     setSent(true);
   };
 
+  // Primary channel: real form POST to FormSubmit (free backend). A native
+  // (non-AJAX) POST is required for FormSubmit's _autoresponse auto-reply.
   const submitEmail = () => {
-    const body = composeLines()
-      .map((l) => l.replace(/\*/g, ''))
-      .join('\n');
-    window.open(
-      `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(segment.title[lang])}&body=${encodeURIComponent(body)}`,
-      '_self'
-    );
     setSent(true);
+    // Wait a frame so the hidden inputs render with the latest values
+    // before the native form submit navigates away.
+    requestAnimationFrame(() => {
+      formRef.current?.submit();
+    });
   };
 
   return (
@@ -172,7 +177,7 @@ const InquiryModal = () => {
           </div>
 
           {/* Contact */}
-          <div className="mt-6 pt-5 border-t border-kaleo-earth/10 grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="mt-6 pt-5 border-t border-kaleo-earth/10 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <label className="block">
               <span className="font-body text-xs uppercase tracking-[0.15em] text-kaleo-earth/60">
                 {inquiryUi.name[lang]} *
@@ -181,6 +186,17 @@ const InquiryModal = () => {
                 type="text"
                 value={values.name ?? ''}
                 onChange={(e) => setValue('name')(e.target.value)}
+                className={`${inputClass} mt-1.5`}
+              />
+            </label>
+            <label className="block">
+              <span className="font-body text-xs uppercase tracking-[0.15em] text-kaleo-earth/60">
+                {inquiryUi.email[lang]} *
+              </span>
+              <input
+                type="email"
+                value={values.email ?? ''}
+                onChange={(e) => setValue('email')(e.target.value)}
                 className={`${inputClass} mt-1.5`}
               />
             </label>
@@ -207,19 +223,19 @@ const InquiryModal = () => {
           {/* Actions */}
           <div className="mt-6 flex flex-col sm:flex-row items-center gap-3">
             <button
-              onClick={submit}
-              disabled={missingRequired || !values.name?.trim()}
+              onClick={submitEmail}
+              disabled={missingRequired || !values.name?.trim() || !emailValid}
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 font-body text-sm uppercase tracking-wider text-kaleo-cream bg-kaleo-terracotta rounded-full px-8 py-3.5 hover:bg-kaleo-earth transition-all disabled:opacity-40 disabled:cursor-not-allowed"
             >
-              <MessageCircle className="w-4 h-4" />
+              <Mail className="w-4 h-4" />
               {inquiryUi.submit[lang]}
             </button>
             <button
-              onClick={submitEmail}
+              onClick={submitWhatsApp}
               disabled={missingRequired || !values.name?.trim()}
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 font-body text-sm uppercase tracking-wider text-kaleo-earth border border-kaleo-earth/25 rounded-full px-8 py-3.5 hover:bg-kaleo-terracotta hover:text-kaleo-cream hover:border-kaleo-terracotta transition-all disabled:opacity-40 disabled:cursor-not-allowed"
             >
-              <Mail className="w-4 h-4" />
+              <MessageCircle className="w-4 h-4" />
               {inquiryUi.submitEmail[lang]}
             </button>
             <p className="font-body text-[11px] text-kaleo-earth/40">{inquiryUi.requiredHint[lang]}</p>
@@ -227,9 +243,32 @@ const InquiryModal = () => {
 
           <p className="mt-4 font-body text-[11px] text-kaleo-earth/45">{inquiryUi.emailChoice[lang]}</p>
 
+          {/* Hidden native form — POSTs to FormSubmit (free backend).
+              Native (non-AJAX) submit + reCAPTCHA are required for the
+              _autoresponse auto-reply to the visitor. */}
+          <form ref={formRef} action={FORM_ENDPOINT} method="POST" className="hidden" aria-hidden="true">
+            <input type="hidden" name="_subject" value={`${segment.title.en} — mostafasimran.com inquiry`} />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value="https://mostafasimran.com/?inquiry=sent" />
+            <input type="hidden" name="_autoresponse" value={inquiryUi.autoresponse[lang]} />
+            {segment.fields.map((f) =>
+              values[f.key]?.trim() ? (
+                <input key={f.key} type="hidden" name={f.key} value={values[f.key].trim()} />
+              ) : null
+            )}
+            {values.name?.trim() && <input type="hidden" name="name" value={values.name.trim()} />}
+            {values.email?.trim() && <input type="hidden" name="email" value={values.email.trim()} />}
+            {values.company?.trim() && <input type="hidden" name="company" value={values.company.trim()} />}
+            {values.phone?.trim() && <input type="hidden" name="phone" value={values.phone.trim()} />}
+          </form>
+
           {sent && (
             <p className="mt-4 font-body text-xs text-kaleo-terracotta">
-              ✓ WhatsApp opened with your inquiry — press send there to deliver it.
+              ✓ {lang === 'bn'
+                ? 'জমা দিচ্ছি… একটি নিরাপত্তা যাচাই (CAPTCHA) এর পর অনুসন্ধানটি ইমেইলে পৌঁছে যাবে এবং নিশ্চিতকরণ ইমেইল আপনার কাছে যাবে।'
+                : lang === 'id'
+                  ? 'Mengirim… setelah verifikasi keamanan (CAPTCHA), permintaan akan dikirim ke email kami dan email konfirmasi akan tiba untuk Anda.'
+                  : 'Submitting… after a quick security check (CAPTCHA) your inquiry will be emailed to us and a confirmation email will be sent to you.'}
             </p>
           )}
         </div>

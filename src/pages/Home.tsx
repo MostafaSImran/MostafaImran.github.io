@@ -1,8 +1,10 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import useLenis from '../hooks/useLenis';
 import { siteConfig } from '../config';
+import { useContent } from '../i18n/LanguageContext';
+import { inquiryUi } from '../i18n/inquiry';
 
 // Sections
 import Navbar from '../sections/Navbar';
@@ -26,6 +28,34 @@ import FloatingActions from '../sections/FloatingActions';
 import InquiryModal from '../components/InquiryModal';
 
 gsap.registerPlugin(ScrollTrigger);
+
+/** Toast shown when the visitor returns from the form backend after sending an inquiry. */
+const InquirySentToast = () => {
+  const { lang } = useContent();
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    if (new URLSearchParams(window.location.search).get('inquiry') === 'sent') {
+      setShow(true);
+      // Clean the URL so a refresh does not show the toast again
+      window.history.replaceState({}, '', window.location.pathname);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!show) return;
+    const t = setTimeout(() => setShow(false), 9000);
+    return () => clearTimeout(t);
+  }, [show]);
+
+  if (!show) return null;
+
+  return (
+    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[70] max-w-md w-[calc(100%-2rem)] bg-kaleo-charcoal text-kaleo-cream font-body text-sm rounded-2xl px-6 py-4 shadow-2xl">
+      ✓ {inquiryUi.sentToast[lang]}
+    </div>
+  );
+};
 
 export default function Home() {
   // Initialize Lenis smooth scrolling
@@ -127,6 +157,9 @@ export default function Home() {
 
       {/* Structured inquiry modal (opens from services & products) */}
       <InquiryModal />
+
+      {/* Thank-you toast after returning from the form backend */}
+      <InquirySentToast />
     </div>
   );
 }
