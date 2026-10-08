@@ -23,6 +23,7 @@ import PlanYourProject from '../sections/PlanYourProject';
 import Credentials from '../sections/Credentials';
 import Research from '../sections/Research';
 import Publications from '../sections/Publications';
+import Insights from '../sections/Insights';
 import Footer from '../sections/Footer';
 import FloatingActions from '../sections/FloatingActions';
 import InquiryModal from '../components/InquiryModal';
@@ -146,6 +147,9 @@ export default function Home() {
       <div id="publications">
         <Publications />
       </div>
+
+      {/* Insights / Engineering Notes (blog) */}
+      <Insights />
 
       {/* Footer */}
       <div id="contact">

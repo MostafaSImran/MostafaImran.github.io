@@ -2,11 +2,13 @@ import { renderToString } from 'react-dom/server';
 import { MemoryRouter } from 'react-router';
 import App from './App';
 import { LanguageProvider } from './i18n/LanguageContext';
+import { articleSlugs, articles } from './insights/articles';
 
-// Server-side entry used at build time to prerender the homepage into
-// static HTML. This lets search-engine crawlers and social preview bots
-// (which do not run JavaScript) see the full page content, metadata and
-// structured sections instead of an empty <div id="root">.
+export { articleSlugs, articles };
+
+// Server-side entry used at build time to prerender the homepage and every
+// insights article into static HTML. This lets search-engine crawlers and
+// social preview bots (which do not run JavaScript) read the full content.
 export function render(url: string): string {
   return renderToString(
     <MemoryRouter initialEntries={[url]}>
