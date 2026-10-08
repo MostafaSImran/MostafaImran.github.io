@@ -292,7 +292,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Large Logo */}
+        {/* Partner Logos */}
         {footerConfig.logoText && (
           <div
             ref={logoRef}
@@ -300,26 +300,24 @@ const Footer = () => {
             style={{ willChange: 'transform, opacity' }}
           >
             <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
-              <svg
-                viewBox="0 0 1200 150"
-                className="w-full max-w-4xl mx-auto h-auto opacity-20"
-                fill="currentColor"
-              >
-                <text
-                  x="50%"
-                  y="50%"
-                  dominantBaseline="middle"
-                  textAnchor="middle"
-                  className="font-display"
-                  style={{
-                    fontSize: '84px',
-                    fontFamily: 'Cormorant Garamond, serif',
-                    letterSpacing: '0.05em'
-                  }}
-                >
-                  {footerConfig.logoText}
-                </text>
-              </svg>
+              <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10">
+                <div className="bg-white rounded-lg px-6 py-4 flex items-center justify-center">
+                  <img
+                    src="/logo-nobo-shakti-prokushal.png"
+                    alt="Nobo Shakti Prokushal (NSP) — Engineering Consultancy, Bangladesh"
+                    className="h-14 md:h-16 w-auto object-contain"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="bg-white rounded-lg px-6 py-4 flex items-center justify-center">
+                  <img
+                    src="/logo-sun-moon-ecosystem.png"
+                    alt="PT Sun Moon Ecosystem — Harmonizing the Planet, Indonesia"
+                    className="h-14 md:h-16 w-auto object-contain"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         )}
