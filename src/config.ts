@@ -49,7 +49,7 @@ export const heroConfig: HeroConfig = {
   backgroundImage: "/hero-bg.webp",
   backgroundAlt: "Industrial power plant with boiler vessels and steel piping at golden hour",
   title: "Mostafa Shawkat Imran",
-  role: "Founder & Principal Consultant, NSP",
+  role: "Mechanical Engineer · CEO, Nobo Shakti Prokushal (NSP) · Managing Director, PT Sun Moon Ecosystem",
   subline:
     "Engineering audits and consultancy for hospitals, factories and infrastructure projects in Bangladesh & Indonesia.",
 };
@@ -461,6 +461,23 @@ export const servicesConfig: ServicesConfig = {
       ],
       compliance: ["LEED", "ISO 14001", "Green Building Codes"],
       result: "Single-dome industrial biogas plant with biogas–diesel hybrid generation, 2022",
+      ctaText: "Call for Audit",
+      ctaHref: "tel:+8801714073604",
+    },
+    {
+      id: "hfo-thermal",
+      badge: "Project-Based",
+      badgeStyle: "project",
+      title: "HFO Systems & Thermal Processing",
+      description:
+        "Heavy fuel oil (HFO) power and thermal systems — from fuel storage and handling to heat utilisation — plus thermal processing lines for manufacturing plants.",
+      whatWeDo: [
+        "HFO boiler and engine-based power systems — fuel storage, heating, preheating and combustion",
+        "Thermal oil heaters, dryers and waste-heat-recovery systems for process plants",
+        "Electromechanical integration, commissioning support and performance audits",
+      ],
+      compliance: ["ASME BPVC", "ISO 50001", "OEM Standards"],
+      result: "HFO-fired thermal system design, integration and commissioning support for industrial plants",
       ctaText: "Call for Audit",
       ctaHref: "tel:+8801714073604",
     },

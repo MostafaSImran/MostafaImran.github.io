@@ -23,7 +23,7 @@ export const id: Content = {
     backgroundImage: '/hero-bg.webp',
     backgroundAlt: 'Pembangkit listrik industri dengan bejana boiler dan perpipaan baja pada golden hour',
     title: 'Mostafa Shawkat Imran',
-    role: 'Pendiri & Konsultan Principal, NSP',
+    role: 'Insinyur Mekanikal · CEO, Nobo Shakti Prokushal (NSP) · Direktur Utama, PT Sun Moon Ecosystem',
     subline:
       'Audit rekayasa dan konsultansi untuk rumah sakit, pabrik, dan proyek infrastruktur di Bangladesh & Indonesia.',
   },
@@ -300,6 +300,23 @@ export const id: Content = {
         ],
         compliance: ['LEED', 'ISO 14001', 'Kode Bangunan Hijau'],
         result: 'PLTSa biogas kubah tunggal dengan pembangkitan hibrida biogas–diesel, 2022',
+        ctaText: 'Hubungi untuk Audit',
+        ctaHref: 'tel:+8801714073604',
+      },
+      {
+        id: 'hfo-thermal',
+        badge: 'Berbasis Proyek',
+        badgeStyle: 'project',
+        title: 'Sistem HFO & Pengolahan Termal',
+        description:
+          'Sistem pembangkit dan termal berbahan Heavy Fuel Oil (HFO) — mulai dari penyimpanan dan penanganan bahan bakar hingga pemanfaatan panas — plus lini pengolahan termal untuk pabrik manufaktur.',
+        whatWeDo: [
+          'Sistem pembangkit berbasis boiler dan mesin HFO — penyimpanan, pemanasan, preheating dan pembakaran bahan bakar',
+          'Pemanas thermal oil, pengering dan sistem pemulihan panas buangan untuk pabrik proses',
+          'Integrasi elektromekanikal, dukungan commissioning dan audit kinerja',
+        ],
+        compliance: ['ASME BPVC', 'ISO 50001', 'Standar OEM'],
+        result: 'Desain, integrasi dan dukungan commissioning sistem termal berbahan HFO untuk pabrik industri',
         ctaText: 'Hubungi untuk Audit',
         ctaHref: 'tel:+8801714073604',
       },
