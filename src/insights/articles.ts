@@ -448,6 +448,73 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: 'sound-attenuation-plant-room-design',
+    title: 'Sound Attenuation Systems for Plant Rooms: Design and Supervision Insights',
+    metaTitle: 'Sound Attenuation Systems for Plant Rooms — Design & Supervision | M. S. Imran',
+    metaDescription:
+      'How to design and supervise sound attenuation for plant rooms: noise source identification, acoustic enclosures, silencers, louvers and vibration isolation — with case studies from a 2 MW diesel generator room at TEAM Textile and the STP blower room at MASCO Dyeing.',
+    excerpt:
+      'Plant rooms housing diesel generators and blowers routinely exceed 100 dB(A) at source. A practical guide to acoustic enclosures, silencers, louvers and vibration isolation — with two real case studies from Bangladeshi industry.',
+    date: '2026-10-09',
+    readMinutes: 5,
+    tags: ['Acoustics', 'Plant Rooms', 'Industrial'],
+    image: '/project-masco.webp',
+    imageAlt: 'Acoustic enclosures, silencers and duct attenuation panels installed in an industrial plant room',
+    blocks: [
+      {
+        type: 'p',
+        text: 'Plant rooms housing heavy machinery such as diesel generators and blowers are notorious for producing excessive noise levels. Without proper attenuation, these facilities can exceed occupational safety limits, disrupt nearby operations and violate environmental compliance standards. Sound attenuation systems are therefore essential to ensure worker safety, regulatory compliance and operational efficiency. This article shares the design and field-supervision insights from two industrial installations I led — a 2 MW diesel generator room at TEAM Textile Ltd and the STP blower room at MASCO Dyeing Ltd.',
+      },
+      { type: 'h2', text: 'Design considerations for sound attenuation' },
+      {
+        type: 'ul',
+        items: [
+          'Noise source identification — diesel generators (TEAM Textile Ltd): primary noise sources include engine combustion, exhaust and mechanical vibration. Blower systems (MASCO Dyeing Ltd): noise originates from impeller rotation, airflow turbulence and motor vibration.',
+          'Acoustic performance targets — occupational safety standards such as OSHA 29 CFR 1910.95 limit exposure to 85 dB(A) over 8 hours; plant room attenuation systems are typically designed to achieve 20–30 dB(A) reduction.',
+        ],
+      },
+      { type: 'h2', text: 'System components' },
+      {
+        type: 'ul',
+        items: [
+          'Acoustic enclosures — double-layer steel panels with mineral wool or perforated absorptive lining.',
+          'Silencers and mufflers — installed on exhaust ducts to reduce combustion noise.',
+          'Acoustic louvers — allow airflow while attenuating noise.',
+          'Vibration isolation — rubber mounts or spring isolators to minimize structure-borne noise.',
+          'Room treatment — absorptive wall and ceiling panels to reduce reverberation.',
+        ],
+      },
+      { type: 'h2', text: 'Case study 1 — TEAM Textile Ltd, 2 MW diesel generator room' },
+      {
+        type: 'p',
+        text: 'Challenge: generator noise exceeding 100 dB(A) at source. Solution: we designed an acoustic enclosure with 50 mm mineral wool lining, installed splitter silencers on the exhaust ducts, and applied vibration isolation pads under the generator base frame. Outcome: approximately 28 dB(A) reduction, ensuring compliance with occupational safety limits and smoother plant operation.',
+      },
+      { type: 'h2', text: 'Case study 2 — MASCO Dyeing Ltd, STP blower room' },
+      {
+        type: 'p',
+        text: 'Challenge: continuous blower noise affecting adjacent production areas. Solution: we designed an acoustic louver system for the ventilation openings, applied absorptive wall panels to reduce reverberation, and implemented duct silencers for the blower discharge. Outcome: noise levels reduced by approximately 22 dB(A), improving worker comfort and environmental compliance.',
+      },
+      { type: 'h2', text: 'Compliance standards' },
+      {
+        type: 'ul',
+        items: [
+          'OSHA 29 CFR 1910.95 — occupational noise exposure limits.',
+          'ISO 3744 — determination of sound power levels of noise sources.',
+          'NFPA 110 — standards for emergency generator installations.',
+          'Local DOE guidelines (Bangladesh) — environmental noise limits for industrial facilities.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'Sound attenuation is not an add-on — it is integral to safe, compliant and efficient plant room design. A machine you cannot hear is not the goal; a room you can safely work in is.',
+      },
+      {
+        type: 'p',
+        text: 'Sound attenuation systems are not just add-ons — they are integral to safe, compliant and efficient plant room design. By combining acoustic enclosures, silencers, louvers and vibration isolation, facilities like TEAM Textile Ltd and MASCO Dyeing Ltd achieved measurable noise reduction and compliance with international standards. For industries in Bangladesh and beyond, adopting structured sound attenuation strategies ensures worker safety, environmental responsibility and operational excellence.',
+      },
+    ],
+  },
 ];
 
 export const articleSlugs: string[] = articles.map((a) => a.slug);
