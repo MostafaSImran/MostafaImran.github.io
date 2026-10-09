@@ -552,23 +552,6 @@ export const servicesConfig: ServicesConfig = {
       ctaHref: "tel:+8801714073604",
     },
     {
-      id: "pressure-vessel",
-      badge: "Project-Based",
-      badgeStyle: "project",
-      title: "Pressure Vessel & Boiler Code Consulting",
-      description:
-        "Design, review and regulatory support for pressure equipment — from plant-level projects to national code development.",
-      whatWeDo: [
-        "Pressure vessel and vacuum tank design with certification support",
-        "Hydrogen piping design and review for new-energy applications",
-        "Boiler code, safety protocols and operational guideline development",
-      ],
-      compliance: ["ASME BPVC", "ASME B31.12", "ASME B31.3"],
-      result: "National Boiler Code drafting with GIZ — integrating ASME BPVC and B31.12 hydrogen piping",
-      ctaText: "Call for Audit",
-      ctaHref: "tel:+8801714073604",
-    },
-    {
       id: "fire-protection",
       badge: "Project-Based",
       badgeStyle: "project",

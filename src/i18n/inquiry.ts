@@ -150,17 +150,6 @@ const segments: Record<string, InquirySegment> = {
     ],
   },
 
-  'pressure-vessel': {
-    title: L('Pressure Vessel & Boiler Code Consulting', 'প্রেশার ভেসেল ও বয়লার কোড পরামর্শ', 'Konsultasi Pressure Vessel & Kode Boiler'),
-    fields: [
-      { key: 'plant_location', type: 'text', label: L('Plant location', 'কারখানার অবস্থান', 'Lokasi pabrik'), required: true },
-      { key: 'equipment_type', type: 'text', label: L('Equipment type', 'যন্ত্রপাতির ধরন', 'Jenis peralatan') },
-      { key: 'certification', type: 'text', label: L('Certification needs', 'সনদপত্রের প্রয়োজনীয়তা', 'Kebutuhan sertifikasi') },
-      { key: 'authority', type: 'text', label: L('Regulatory authority', 'নিয়ন্ত্রক কর্তৃপক্ষ', 'Otoritas regulasi') },
-      { key: 'timeline', type: 'date', label: L('Project timeline', 'প্রকল্পের সময়সীমা', 'Jadwal proyek') },
-    ],
-  },
-
   'fire-protection': {
     title: L('Fire Protection & Life Safety Design', 'ফায়ার প্রোটেকশন ও লাইফ সেফটি ডিজাইন', 'Desain Proteksi Kebakaran & Keselamatan Jiwa'),
     fields: [

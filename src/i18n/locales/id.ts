@@ -367,22 +367,6 @@ export const id: Content = {
         ctaHref: 'tel:+8801714073604',
       },
       {
-        id: 'pressure-vessel',
-        badge: 'Berbasis Proyek',
-        badgeStyle: 'project',
-        title: 'Konsultasi Pressure Vessel & Kode Boiler',
-        description: 'Desain, peninjauan dan dukungan regulatif untuk peralatan bertekanan — dari proyek tingkat pabrik hingga penyusunan kode nasional.',
-        whatWeDo: [
-          'Desain pressure vessel dan tangki vakum dengan dukungan sertifikasi',
-          'Desain dan peninjauan perpipaan hidrogen untuk aplikasi energi baru',
-          'Penyusunan kode boiler, protokol keselamatan dan pedoman operasional',
-        ],
-        compliance: ['ASME BPVC', 'ASME B31.12', 'ASME B31.3'],
-        result: 'Penyusunan Kode Boiler Nasional bersama GIZ — integrasi ASME BPVC dan perpipaan hidrogen B31.12',
-        ctaText: 'Hubungi untuk Audit',
-        ctaHref: 'tel:+8801714073604',
-      },
-      {
         id: 'fire-protection',
         badge: 'Berbasis Proyek',
         badgeStyle: 'project',
