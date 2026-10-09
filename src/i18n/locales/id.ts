@@ -331,6 +331,8 @@ export const id: Content = {
       { title: 'Pengantar ASME B31.12 Hydrogen Piping & Pipelines', detail: '2.00 CEUs / 20 PDHs', year: '2026' },
       { title: 'Proses Sertifikasi Boiler & Pressure Vessel ASME', detail: '3.0 PDHs', year: '2026' },
       { title: 'Kode BPV ASME, Bagian V: Ikhtisar Pemeriksaan Nondestruktif', detail: '3.0 PDHs', year: '2026' },
+      { title: 'NFPA 13: Standar Instalasi Sistem Sprinkler', detail: 'Seri Online Belajar Mandiri · NFPA', year: '2019' },
+      { title: 'NFPA 72: Kode Alarm Kebakaran & Sinyal Nasional', detail: 'Seri Online Belajar Mandiri · NFPA', year: '2019' },
       { title: 'LEED NC-2009 — Pembangunan Berkelanjutan & Bangunan Hijau', detail: 'Workshop', year: '2016' },
       { title: 'Pelatihan IEB CPD', detail: '57 Jam', year: '2015' },
       { title: 'Pelatihan Pemadam Kebakaran, Penyelamatan & Evakuasi', detail: '20 Jam', year: '2013' },

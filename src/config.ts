@@ -225,6 +225,8 @@ export const credentialsConfig: CredentialsConfig = {
     { title: "Introduction to ASME B31.12 Hydrogen Piping & Pipelines", detail: "2.00 CEUs / 20 PDHs", year: "2026" },
     { title: "ASME Boiler & Pressure Vessel Certification Process", detail: "3.0 PDHs", year: "2026" },
     { title: "ASME BPV Code, Section V: Nondestructive Examination Overview", detail: "3.0 PDHs", year: "2026" },
+    { title: "NFPA 13: Standard for the Installation of Sprinkler Systems", detail: "Self-Guided Online Series · NFPA", year: "2019" },
+    { title: "NFPA 72: National Fire Alarm and Signaling Code", detail: "Self-Guided Online Series · NFPA", year: "2019" },
     { title: "LEED NC-2009 — Sustainable Development & Green Building", detail: "Workshop", year: "2016" },
     { title: "IEB CPD Training", detail: "57 Hours", year: "2015" },
     { title: "Fire Fighting, Rescue & Evacuation Training", detail: "20 Hours", year: "2013" },
