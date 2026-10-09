@@ -106,6 +106,107 @@ export const id: Content = {
       },
     ],
   },
+  experience: {
+    sectionLabel: 'Rekam Jejak secara Rinci',
+    sectionTitle: 'Pengalaman berdasarkan Sektor',
+    intro:
+      'Dua dekade praktik rekayasa diringkas dalam satu prinsip: sistem yang melindungi nyawa harus dirancang sesuai standar internasional, dijalankan dengan akuntabilitas, dan diserahkan bersama orang-orang yang terlatih. Dari sistem manifold oksigen di 20 puskesmas kecamatan hingga penyusunan kode boiler nasional — karya saya menjembatani kepatuhan kode dan pelaksanaan di lapangan.',
+    categories: [
+      {
+        id: 'healthcare',
+        label: 'Infrastruktur Layanan Kesehatan',
+        standards: ['HTM-2022', 'NFPA-99', 'ISO 7396-1'],
+        roles: [
+          {
+            role: 'Konsultan, Layanan Perawatan Kritis',
+            org: 'Save the Children',
+            period: 'Juli 2022 – Maret 2023',
+            project: 'Pembangunan Sistem Manifold Oksigen di 20 Puskesmas Kecamatan',
+            points: [
+              'Memimpin desain dan instalasi Sistem Pipa Gas Medis Terpusat sesuai standar HTM-2022 dan NFPA-99',
+              'Mengawasi renovasi ruang manifold, pemeliharaan preventif dan pemecahan masalah',
+              'Menyusun dan menerapkan Rencana Jaminan Mutu dan Kepatuhan Keselamatan',
+              'Berkordinasi dengan MOHFW, DGHS, HED, PWD, NEMEMW dan Save the Children untuk pelaksanaan proyek',
+              'Melatih staf rumah sakit di lokasi tentang pengoperasian dan keselamatan sistem oksigen',
+            ],
+          },
+          {
+            role: 'Pendiri & Konsultan Principal',
+            org: 'Nobo Shakti Prokushal (NSP)',
+            period: '2007 – Sekarang',
+            project: 'Proyek Rekayasa Rumah Sakit',
+            points: [
+              'Merancang dan menkomisioning Sistem Pipa Gas Medis dan Sistem Proteksi Kebakaran untuk Rumah Sakit Shaheed Monsur Ali, CD Path, Selima Medical College, Khidma dan Abeda Memorial',
+              'Desain konseptual untuk Nexus Cardiac Care & Research Institute, Mymensingh',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'renewable',
+        label: 'Energi Terbarukan & Keberlanjutan',
+        standards: ['Biogas', 'Solar', 'Bi-Fuel'],
+        roles: [
+          {
+            role: 'Pendiri & Konsultan Principal',
+            org: 'Nobo Shakti Prokushal (NSP)',
+            period: '2007 – Sekarang',
+            project: 'Proyek Energi Terbarukan',
+            points: [
+              'Riset dan integrasi sistem solar, hidroponik dan pupuk organik untuk kebun atap',
+              'Mengembangkan sistem pemurnian biogas dan konversi bi-fuel (metana–diesel) untuk pemanfaatan limbah peternakan unggas',
+              'Mengawasi instalasi 100 paket sistem tenaga surya rumahan (30 W) di Kabupaten Kurigram',
+              'Berkolaborasi dengan BCSIR dalam pengembangan mesin irigasi bi-fuel',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'industrial',
+        label: 'Rekayasa Industri & Komersial',
+        standards: ['ASME BPVC', 'HVAC', 'Fire Protection'],
+        roles: [
+          {
+            role: 'Pendiri & Konsultan Principal',
+            org: 'Nobo Shakti Prokushal (NSP)',
+            period: '2007 – Sekarang',
+            project: 'Proyek Industri & Komersial',
+            points: [
+              'Merancang dan memasang sistem peredam suara untuk fasilitas telekomunikasi dan komersial termasuk BTCL',
+              'Menyediakan sistem air panas dan dingin untuk klien industri termasuk MASCO Dyeing dan TM Textile',
+              'Merekayasa sistem gas medis dan mekanikal untuk klien otomotif dan komersial termasuk Shohagh Motors',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'leadership',
+        label: 'Kepemimpinan & Pelatihan',
+        standards: ['Pengembangan Kapasitas', 'QA / Keselamatan'],
+        roles: [
+          {
+            role: 'Konsultan, Layanan Perawatan Kritis',
+            org: 'Save the Children',
+            period: 'Juli 2022 – Maret 2023',
+            project: 'Pengembangan Kapasitas & Koordinasi Pemangku Kepentingan',
+            points: [
+              'Melatih staf rumah sakit di lokasi tentang pengoperasian dan keselamatan sistem oksigen',
+              'Berkoordinasi lintas lembaga dengan MOHFW, DGHS, HED, PWD, NEMEMW dan Save the Children',
+              'Menyusun Rencana Jaminan Mutu dan Kepatuhan Keselamatan yang diterapkan di seluruh 20 fasilitas',
+            ],
+          },
+          {
+            role: 'Key Expert 1',
+            org: 'GIZ · Proyek Pengembangan Kode Boiler Bangladesh',
+            period: '2026 – Sekarang',
+            points: [
+              'Menyusun dan meninjau standar boiler nasional serta mempresentasikan kerangka teknis kepada pemangku kepentingan GIZ, CIOB dan RSC',
+            ],
+          },
+        ],
+      },
+    ],
+  },
   scania: {
     sectionLabel: 'Pencapaian Desain Unggulan · 2010–2011',
     sectionTitle: 'Bodi Bus Mewah Pertama Bangladesh',

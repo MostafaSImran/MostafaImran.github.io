@@ -14,6 +14,7 @@ import CardStack from '../sections/CardStack';
 import BreathSection from '../sections/BreathSection';
 import Services from '../sections/Services';
 import ZigZagGrid from '../sections/ZigZagGrid';
+import ExperienceDetail from '../sections/ExperienceDetail';
 import ScaniaFeature from '../sections/ScaniaFeature';
 import ProductFeature from '../sections/ProductFeature';
 import SoundPod from '../sections/SoundPod';
@@ -120,6 +121,9 @@ export default function Home() {
 
       {/* Zig-Zag Grid Section */}
       <ZigZagGrid />
+
+      {/* Experience by Sector — tabbed detail */}
+      <ExperienceDetail />
 
       {/* Scania Feature Section */}
       <ScaniaFeature />

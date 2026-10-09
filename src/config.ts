@@ -186,6 +186,131 @@ export const zigZagGridConfig: ZigZagGridConfig = {
   ],
 };
 
+// Experience Detail Section — Expanded professional experience by category
+export interface ExperienceRole {
+  role: string;
+  org: string;
+  period: string;
+  project?: string;
+  points: string[];
+}
+
+export interface ExperienceCategory {
+  id: string;
+  label: string;
+  roles: ExperienceRole[];
+  standards: string[];
+}
+
+export interface ExperienceDetailConfig {
+  sectionLabel: string;
+  sectionTitle: string;
+  intro: string;
+  categories: ExperienceCategory[];
+}
+
+export const experienceDetailConfig: ExperienceDetailConfig = {
+  sectionLabel: "Track Record in Detail",
+  sectionTitle: "Experience by Sector",
+  intro:
+    "Two decades of engineering practice distilled into one principle: systems that protect life must be designed to international standards, delivered with accountability, and handed over with trained people. From oxygen manifold systems across 20 upazila health complexes to national boiler code development, my work bridges code compliance and field execution — building infrastructure that hospitals, factories and communities can rely on.",
+  categories: [
+    {
+      id: "healthcare",
+      label: "Healthcare Infrastructure",
+      standards: ["HTM-2022", "NFPA-99", "ISO 7396-1"],
+      roles: [
+        {
+          role: "Consultant, Critical Care Service",
+          org: "Save the Children",
+          period: "July 2022 – March 2023",
+          project: "Oxygen Manifold System Establishment at 20 Upazila Health Complexes",
+          points: [
+            "Led design and installation of Central Medical Gas Pipeline Systems ensuring compliance with HTM-2022 and NFPA-99 standards",
+            "Supervised manifold room renovation, preventive maintenance and troubleshooting",
+            "Developed and implemented Quality Assurance and Safety Compliance Plans",
+            "Coordinated with MOHFW, DGHS, HED, PWD, NEMEMW and Save the Children for project execution",
+            "Conducted on-site training for hospital staff on oxygen system operation and safety",
+          ],
+        },
+        {
+          role: "Founder & Principal Consultant",
+          org: "Nobo Shakti Prokushal (NSP)",
+          period: "2007 – Present",
+          project: "Hospital Engineering Projects",
+          points: [
+            "Designed and commissioned Medical Gas Pipeline Systems and Fire Protection Systems for Shaheed Monsur Ali Medical College, CD Path, Selima Medical College, Khidma and Abeda Memorial hospitals",
+            "Conceptual design for Nexus Cardiac Care & Research Institute, Mymensingh",
+          ],
+        },
+      ],
+    },
+    {
+      id: "renewable",
+      label: "Renewable Energy & Sustainability",
+      standards: ["Biogas", "Solar", "Bi-Fuel"],
+      roles: [
+        {
+          role: "Founder & Principal Consultant",
+          org: "Nobo Shakti Prokushal (NSP)",
+          period: "2007 – Present",
+          project: "Renewable Energy Projects",
+          points: [
+            "Research and integration of solar, hydroponic and organic fertilizer systems for rooftop gardening",
+            "Developed biogas purification and bi-fuel (methane–diesel) conversion systems for poultry waste utilization",
+            "Supervised solar home system installations (100 packages, 30 W each) across Kurigram District",
+            "Collaborated with BCSIR on bi-fuel irrigation engine development",
+          ],
+        },
+      ],
+    },
+    {
+      id: "industrial",
+      label: "Industrial & Commercial Engineering",
+      standards: ["ASME BPVC", "HVAC", "Fire Protection"],
+      roles: [
+        {
+          role: "Founder & Principal Consultant",
+          org: "Nobo Shakti Prokushal (NSP)",
+          period: "2007 – Present",
+          project: "Industrial & Commercial Projects",
+          points: [
+            "Designed and installed sound attenuation systems for telecom and commercial facilities including BTCL",
+            "Delivered hot and chilled water systems for industrial clients including MASCO Dyeing and TM Textile",
+            "Engineered medical gas and mechanical systems for automotive and commercial clients including Shohagh Motors",
+          ],
+        },
+      ],
+    },
+    {
+      id: "leadership",
+      label: "Leadership & Training",
+      standards: ["Capacity Building", "QA / Safety"],
+      roles: [
+        {
+          role: "Consultant, Critical Care Service",
+          org: "Save the Children",
+          period: "July 2022 – March 2023",
+          project: "Capacity Building & Stakeholder Coordination",
+          points: [
+            "Conducted on-site training for hospital staff on oxygen system operation and safety",
+            "Coordinated multi-agency execution across MOHFW, DGHS, HED, PWD, NEMEMW and Save the Children",
+            "Developed Quality Assurance and Safety Compliance Plans adopted across all 20 facilities",
+          ],
+        },
+        {
+          role: "Key Expert 1",
+          org: "GIZ · Bangladesh Boiler Code Development Project",
+          period: "2026 – Present",
+          points: [
+            "Drafting and reviewing national boiler standards and presenting technical frameworks to GIZ, CIOB and RSC stakeholders",
+          ],
+        },
+      ],
+    },
+  ],
+};
+
 // Credentials Section — Certifications, affiliations & awards
 export interface CertificationItem {
   title: string;

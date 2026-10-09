@@ -6,6 +6,7 @@ import type {
   CardStackConfig,
   BreathSectionConfig,
   ZigZagGridConfig,
+  ExperienceDetailConfig,
   ScaniaConfig,
   ProductConfig,
   SoundPodConfig,
@@ -25,6 +26,7 @@ export interface Content {
   cards: CardStackConfig;
   breath: BreathSectionConfig;
   zigzag: ZigZagGridConfig;
+  experience: ExperienceDetailConfig;
   scania: ScaniaConfig;
   product: ProductConfig;
   soundpod: SoundPodConfig;
