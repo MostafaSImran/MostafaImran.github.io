@@ -3,6 +3,8 @@ import { ArrowLeft, Mail, MessageCircle, Clock } from 'lucide-react';
 import { getArticle } from '../insights/articles';
 import type { ArticleBlock } from '../insights/articles';
 import { WHATSAPP_NUMBER } from '../i18n/inquiry';
+import { openInquiry } from '../i18n/inquiry';
+import InquiryModal from '../components/InquiryModal';
 import { useContent } from '../i18n/LanguageContext';
 
 const Block = ({ block }: { block: ArticleBlock }) => {
@@ -46,6 +48,25 @@ const Block = ({ block }: { block: ArticleBlock }) => {
             </figcaption>
           )}
         </figure>
+      );
+    case 'cta':
+      return (
+        <div className="my-12 bg-kaleo-earth rounded-3xl p-8 md:p-10 text-center shadow-xl">
+          <h2 className="font-display text-2xl md:text-3xl text-kaleo-cream leading-snug">
+            {block.title}
+          </h2>
+          <p className="font-body text-sm md:text-base text-kaleo-cream/75 leading-relaxed max-w-xl mx-auto mt-4">
+            {block.text}
+          </p>
+          <button
+            type="button"
+            onClick={() => openInquiry(block.serviceId)}
+            className="inline-flex items-center gap-2 mt-7 font-body text-sm uppercase tracking-[0.12em] bg-kaleo-terracotta text-kaleo-cream rounded-full px-8 py-4 transition-all duration-300 hover:bg-kaleo-cream hover:text-kaleo-earth shadow-lg"
+          >
+            {block.button}
+            <ArrowLeft className="w-4 h-4 rotate-180" />
+          </button>
+        </div>
       );
     default:
       return (
@@ -184,6 +205,9 @@ const ArticlePage = () => {
           © 2026 Mostafa Shawkat Imran · Nobo Shakti Prokushal (NSP) · PT Sun Moon Ecosystem
         </p>
       </main>
+
+      {/* Structured inquiry modal (opened by in-article CTA blocks) */}
+      <InquiryModal />
     </div>
   );
 };

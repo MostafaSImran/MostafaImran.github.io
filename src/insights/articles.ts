@@ -7,7 +7,8 @@ export type ArticleBlock =
   | { type: 'h2'; text: string }
   | { type: 'ul'; items: string[] }
   | { type: 'quote'; text: string }
-  | { type: 'img'; src: string; alt: string; caption?: string };
+  | { type: 'img'; src: string; alt: string; caption?: string }
+  | { type: 'cta'; title: string; text: string; button: string; serviceId: string };
 
 export interface Article {
   slug: string;
@@ -270,8 +271,8 @@ export const articles: Article[] = [
     date: '2026-10-09',
     readMinutes: 6,
     tags: ['Healthcare', 'MEP Audit', 'NFPA-99', 'DGHS'],
-    image: '/insight-oxygen-manifold.webp',
-    imageAlt: 'Schematic of a hospital oxygen manifold system with primary and reserve cylinder banks, changeover manifold, zone valves and master alarm panel',
+    image: '/insight-hospital-ward.webp',
+    imageAlt: 'Hospital ward beds with medical gas outlet panels for oxygen, vacuum and medical air mounted on the wall behind the headboards',
     blocks: [
       {
         type: 'p',
@@ -600,6 +601,13 @@ export const articles: Article[] = [
       {
         type: 'p',
         text: 'Transforming the healthcare sector in Bangladesh requires a unified strategy: boosting public investment, integrating robust digital health frameworks, fostering transparent public-private partnerships, and enforcing uncompromising, transparent hospital audits. Only through rigorous accountability and structural modernization can the nation ensure that quality healthcare becomes a universal, accessible reality for all citizens. For facility owners and administrators, the practical first step is an independent audit of the systems patients never see — medical gas, fire protection, electrical resilience and HVAC — before they are tested by an emergency.',
+      },
+      {
+        type: 'cta',
+        title: 'Is Your Hospital Audit-Ready?',
+        text: 'Get an independent Healthcare MEP Validation & Audit — medical gas pipelines, fire safety, electrical resilience and HVAC — aligned with NFPA-99, ISO 7396-1 and DGHS licensing requirements.',
+        button: 'Request a Hospital Audit',
+        serviceId: 'healthcare-validation',
       },
     ],
   },
