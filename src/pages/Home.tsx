@@ -15,12 +15,9 @@ import BreathSection from '../sections/BreathSection';
 import Services from '../sections/Services';
 import ZigZagGrid from '../sections/ZigZagGrid';
 import ExperienceDetail from '../sections/ExperienceDetail';
-import ScaniaFeature from '../sections/ScaniaFeature';
-import ProductFeature from '../sections/ProductFeature';
-import SoundPod from '../sections/SoundPod';
+import ProductsRedirect from '../sections/ProductsRedirect';
 import ProofStrip from '../sections/ProofStrip';
 import Projects from '../sections/Projects';
-import PlanYourProject from '../sections/PlanYourProject';
 import Credentials from '../sections/Credentials';
 import Research from '../sections/Research';
 import Publications from '../sections/Publications';
@@ -125,19 +122,10 @@ export default function Home() {
       {/* Experience by Sector — tabbed detail */}
       <ExperienceDetail />
 
-      {/* Scania Feature Section */}
-      <ScaniaFeature />
-
-      {/* EcoNest Product Feature Section */}
+      {/* Products & fabrication — now hosted on the NSP company site */}
       <div id="products">
-        <ProductFeature />
+        <ProductsRedirect />
       </div>
-
-      {/* Sound Pod Section */}
-      <SoundPod />
-
-      {/* Plan Your Project — client guides & structured inquiry */}
-      <PlanYourProject />
 
       {/* Credentials Section */}
       <Credentials />

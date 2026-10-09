@@ -15,7 +15,6 @@ export const navConfig: NavConfig = {
     { label: "About", target: "about" },
     { label: "Services", target: "services" },
     { label: "Projects", target: "projects" },
-    { label: "Products", target: "products" },
     { label: "Research", target: "research" },
     { label: "Publications", target: "publications" },
     { label: "Insights", target: "insights" },
