@@ -31,6 +31,22 @@ const Block = ({ block }: { block: ArticleBlock }) => {
           </p>
         </blockquote>
       );
+    case 'img':
+      return (
+        <figure className="my-10">
+          <img
+            src={block.src}
+            alt={block.alt}
+            loading="lazy"
+            className="w-full rounded-2xl border border-kaleo-earth/10 shadow-sm"
+          />
+          {block.caption && (
+            <figcaption className="font-body text-xs text-kaleo-earth/50 mt-3 text-center">
+              {block.caption}
+            </figcaption>
+          )}
+        </figure>
+      );
     default:
       return (
         <p className="font-body text-base md:text-lg text-kaleo-earth/80 leading-relaxed mt-5">

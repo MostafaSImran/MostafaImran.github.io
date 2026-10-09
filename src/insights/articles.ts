@@ -6,7 +6,8 @@ export type ArticleBlock =
   | { type: 'p'; text: string }
   | { type: 'h2'; text: string }
   | { type: 'ul'; items: string[] }
-  | { type: 'quote'; text: string };
+  | { type: 'quote'; text: string }
+  | { type: 'img'; src: string; alt: string; caption?: string };
 
 export interface Article {
   slug: string;
@@ -484,6 +485,12 @@ export const articles: Article[] = [
           'Vibration isolation — rubber mounts or spring isolators to minimize structure-borne noise.',
           'Room treatment — absorptive wall and ceiling panels to reduce reverberation.',
         ],
+      },
+      {
+        type: 'img',
+        src: '/insight-acoustic-plantroom.webp',
+        alt: 'Cutaway schematic of a plant room acoustic treatment layout showing the acoustic enclosure, splitter silencer on the exhaust duct, acoustic louvers, absorptive panels and vibration isolation mounts',
+        caption: 'Typical plant room acoustic treatment layout — enclosure, silencer, louvers, absorbers and vibration isolation working together.',
       },
       { type: 'h2', text: 'Case study 1 — TEAM Textile Ltd, 2 MW diesel generator room' },
       {
