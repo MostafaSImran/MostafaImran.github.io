@@ -212,8 +212,6 @@ export interface CredentialsConfig {
   affiliations: AffiliationItem[];
   awardsLabel: string;
   awards: AwardItem[];
-  personalLabel: string;
-  personal: AwardItem[];
 }
 
 export const credentialsConfig: CredentialsConfig = {
@@ -249,13 +247,6 @@ export const credentialsConfig: CredentialsConfig = {
   awards: [
     { title: "Engineering Excellence Award", detail: "Innovative medical gas system development" },
     { title: "Sustainable Energy Leadership", detail: "Contributions to bi-fuel engine development" },
-  ],
-  personalLabel: "Personal Development & Training",
-  personal: [
-    {
-      title: "Quantum Method Course — Mind Development & Self-Improvement",
-      detail: "Yoga Foundation, Dhaka · Reg. No. 127/350",
-    },
   ],
 };
 

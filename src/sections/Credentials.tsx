@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { BadgeCheck, Award, Users, Sparkles } from 'lucide-react';
+import { BadgeCheck, Award, Users } from 'lucide-react';
 import { useContent } from '../i18n/LanguageContext';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -64,8 +64,7 @@ const Credentials = () => {
   const hasContent =
     credentialsConfig.certifications.length > 0 ||
     credentialsConfig.affiliations.length > 0 ||
-    credentialsConfig.awards.length > 0 ||
-    credentialsConfig.personal.length > 0;
+    credentialsConfig.awards.length > 0;
 
   if (!credentialsConfig.sectionTitle && !hasContent) return null;
 
@@ -152,39 +151,6 @@ const Credentials = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
-            )}
-
-            {credentialsConfig.personal.length > 0 && (
-              <div>
-                <h3 className="font-body text-xs uppercase tracking-[0.2em] text-kaleo-terracotta flex items-center gap-2 mb-8">
-                  <Sparkles className="w-4 h-4" />
-                  {credentialsConfig.personalLabel}
-                </h3>
-                <ul className="space-y-5">
-                  {credentialsConfig.personal.map((item, index) => (
-                    <li key={index}>
-                      <p className="font-body text-sm md:text-base text-kaleo-earth">
-                        {item.title}
-                      </p>
-                      <p className="font-body text-xs text-kaleo-earth/50 mt-1">{item.detail}</p>
-                    </li>
-                  ))}
-                </ul>
-                <a
-                  href="/cert-quantum-method.webp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block mt-6 w-40 rounded-lg overflow-hidden border border-kaleo-earth/15 shadow-sm transition-transform duration-300 hover:scale-[1.02] hover:shadow-md"
-                  aria-label="View Quantum Method Course certificate"
-                >
-                  <img
-                    src="/cert-quantum-method.webp"
-                    alt="Quantum Method Course certificate — Yoga Foundation, Dhaka, June 2012"
-                    loading="lazy"
-                    className="w-full h-auto block"
-                  />
-                </a>
               </div>
             )}
           </div>
