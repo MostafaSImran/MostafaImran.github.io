@@ -522,6 +522,87 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: 'hospital-audit-bangladesh-healthcare',
+    title: 'Navigating the Cracks: The Present Condition of Bangladesh Healthcare and the Urgent Necessity of Hospital Audits',
+    metaTitle: 'Why Hospital Audits Are Urgent in Bangladesh — M. S. Imran',
+    metaDescription:
+      'Bangladesh has 665 public hospitals, 6,000+ private facilities and 7 doctors per 10,000 people. Why systematic hospital audits — clinical, financial and infrastructural — are the fastest route to safe, accountable healthcare delivery.',
+    excerpt:
+      '665 public hospitals, 6,000+ private facilities, and 7 doctors per 10,000 people — Bangladesh’s healthcare system is under strain. Here is why systematic hospital audits are no longer optional.',
+    date: '2026-10-09',
+    readMinutes: 6,
+    tags: ['Healthcare', 'Hospital Audit', 'Bangladesh', 'DGHS'],
+    image: '/project-manifold.webp',
+    imageAlt: 'Oxygen cylinder manifold room — the kind of critical hospital infrastructure a systematic audit must verify',
+    blocks: [
+      {
+        type: 'p',
+        text: 'The healthcare sector in Bangladesh stands at a critical crossroads. As the nation strives for rapid socio-economic expansion, its healthcare delivery framework remains strained under the weight of surging demand, structural bottlenecks and uneven service quality. To build a resilient and reliable medical ecosystem, understanding the structural landscape, diagnosing core service gaps and implementing strict, transparent hospital auditing are paramount.',
+      },
+      { type: 'h2', text: 'The landscape: public and private' },
+      {
+        type: 'p',
+        text: 'The healthcare delivery mechanism is broadly split between state-funded public institutions and a rapidly expanding private sector. According to data from the Directorate General of Health Services (DGHS), the institutional breakdown includes:',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Government/public hospitals — 665 public hospitals providing approximately 71,100 beds, ranging from rural Upazila Health Complexes and district general hospitals to massive tertiary-level specialized medical college hospitals in major cities.',
+          'Private hospitals and clinics — over 6,000 registered private hospitals and clinics delivering roughly 126,353 beds, complemented by over 12,000 registered diagnostic centers and blood banks, alongside a considerable network of unregistered facilities. Private entities currently shoulder more than 60% of secondary and tertiary care service delivery.',
+        ],
+      },
+      { type: 'h2', text: 'Why people often fail to get proper services' },
+      {
+        type: 'p',
+        text: 'Despite the physical presence of hospitals across urban and rural tiers, citizens frequently struggle to secure timely, high-quality medical care due to several deeply entrenched systemic friction points:',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Severe professional shortages and minimal consultation time — Bangladesh has roughly 7 doctors per 10,000 people, well below the WHO recommendation; doctors in overburdened public tertiary facilities often spend less than a minute per patient, drastically hurting diagnostic accuracy.',
+          'Overburdened tertiary infrastructure — weak primary and secondary care at the grassroots level pushes patients to bypass local centers for minor ailments, creating extreme congestion at tertiary city hospitals.',
+          'Soaring out-of-pocket expenditures — out-of-pocket expenses account for nearly 74% of total health expenditure, imposing heavy financial strains that often push vulnerable households into poverty or force them to forgo necessary treatment entirely.',
+          'Reactive health-seeking habits — seeking care only after conditions deteriorate drastically increases treatment complexity and stretches medical infrastructure further.',
+        ],
+      },
+      { type: 'h2', text: 'Critical infrastructure gaps' },
+      {
+        type: 'p',
+        text: 'Bridging the service delivery gap requires addressing chronic infrastructural and logistical deficiencies, particularly evident across public and peripheral facilities:',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Equipment and maintenance deficits — many district and sub-district facilities lack functional diagnostic machinery (advanced X-rays, ultrasonograms, ECGs, CT scans), or leave supplied equipment idle for want of skilled operators or proper maintenance funds.',
+          'Logistical and utility shortages — unreliable power supply, generator fuel allocation gaps, ambulance availability and basic drug storage issues undermine emergency response capacity.',
+          'Residential and administrative shortages — acute shortages of usable on-site housing for doctors and nurses at Upazila Health Complexes hinder staff retention and round-the-clock emergency readiness.',
+        ],
+      },
+      { type: 'h2', text: 'The necessity of systematic hospital audits' },
+      {
+        type: 'p',
+        text: 'To restore public trust, ensure clinical safety and curb irregularities, institutionalizing routine hospital audits across both public and private sectors is non-negotiable:',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Quality control and clinical standard enforcement — audits ensure hospitals adhere to proper standard operating procedures, maintain infection control protocols, and operate with certified medical devices and qualified professionals.',
+          'Financial transparency and accountability — regular auditing helps eliminate corruption in medical procurement, equipment provisioning and supply chain management, ensuring that state allocations and private pricing align with fair-practice guidelines.',
+          'Data-driven resource allocation — comprehensive clinical and infrastructural audits give policymakers accurate ground-level data, allowing targeted investment in regions facing acute shortages.',
+        ],
+      },
+      {
+        type: 'quote',
+        text: 'An audit is not an accusation — it is the difference between a hospital that looks functional and a hospital that provably is.',
+      },
+      { type: 'h2', text: 'Moving forward' },
+      {
+        type: 'p',
+        text: 'Transforming the healthcare sector in Bangladesh requires a unified strategy: boosting public investment, integrating robust digital health frameworks, fostering transparent public-private partnerships, and enforcing uncompromising, transparent hospital audits. Only through rigorous accountability and structural modernization can the nation ensure that quality healthcare becomes a universal, accessible reality for all citizens. For facility owners and administrators, the practical first step is an independent audit of the systems patients never see — medical gas, fire protection, electrical resilience and HVAC — before they are tested by an emergency.',
+      },
+    ],
+  },
 ];
 
 export const articleSlugs: string[] = articles.map((a) => a.slug);

@@ -16,7 +16,7 @@ const stats: Stat[] = [
   {
     value: 40,
     suffix: '+',
-    label: { en: 'Hospitals audited', bn: 'হাসপাতালে অডিট সম্পন্ন', id: 'Rumah sakit diaudit' },
+    label: { en: 'Hospitals served', bn: 'সেবাপ্রাপ্ত হাসপাতাল', id: 'Rumah sakit dilayani' },
   },
   {
     value: 20,
