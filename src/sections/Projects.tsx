@@ -75,11 +75,11 @@ const projects: Project[] = [
   {
     image: '/project-masco.webp',
     imageAlt: {
-      en: 'Rooftop duct silencers and acoustic louvers of an industrial sound attenuation installation',
-      bn: 'শিল্প শব্দ নিরোধ বসানোর রুফটপ ডাক্ট সাইলেন্সার ও অ্যাকুস্টিক লুভার',
-      id: 'Silencer duct rooftop dan louver akustik instalasi atenuasi suara industri',
+      en: 'Blower-room silencers and rooftop duct attenuation panels of the MASCO sound attenuation installation',
+      bn: 'MASCO শব্দ নিরোধ বসানোর ব্লোয়ার-রুম সাইলেন্সার ও রুফটপ ডাক্ট অ্যাটেনুয়েশন প্যানেল',
+      id: 'Silencer ruang blower dan panel atenuasi duct rooftop instalasi atenuasi suara MASCO',
     },
-    year: '2026',
+    year: '2016',
     title: {
       en: 'Industrial Sound Attenuation — MASCO',
       bn: 'শিল্প শব্দ নিরোধ — MASCO',
@@ -94,15 +94,15 @@ const projects: Project[] = [
   {
     image: '/project-btcl-noc.webp',
     imageAlt: {
-      en: 'National operations center control room with video wall and operator team',
-      bn: 'ভিডিও ওয়াল ও অপারেটর টিমসহ জাতীয় অপারেশনস সেন্টার নিয়ন্ত্রণ কক্ষ',
-      id: 'Ruang kontrol pusat operasi nasional dengan video wall dan tim operator',
+      en: 'Network operations center control room with video wall and operator team',
+      bn: 'ভিডিও ওয়াল ও অপারেটর টিমসহ নেটওয়ার্ক অপারেশনস সেন্টার নিয়ন্ত্রণ কক্ষ',
+      id: 'Ruang kontrol pusat operasi jaringan dengan video wall dan tim operator',
     },
     year: '2020',
     title: {
-      en: 'National Operations Center — BTCL',
-      bn: 'জাতীয় অপারেশনস সেন্টার — BTCL',
-      id: 'Pusat Operasi Nasional — BTCL',
+      en: 'Network Operations Center — BTCL',
+      bn: 'নেটওয়ার্ক অপারেশনস সেন্টার — BTCL',
+      id: 'Pusat Operasi Jaringan — BTCL',
     },
     result: {
       en: 'NOC fit-out with video wall, operator consoles and team training for the national telecom operator.',
@@ -124,9 +124,9 @@ const projects: Project[] = [
       id: 'Stasiun Pengatur & Pengukur Gas — SGCL',
     },
     result: {
-      en: 'Pressure regulation, slam-shut safety and metering train for Sundarban Gas Company Ltd (SGCL) — regulator metering station (RMS).',
-      bn: 'সুন্দরবন গ্যাস কোম্পানি লিমিটেডের (SGCL) জন্য প্রেশার রেগুলেশন, স্লাম-শাট সেফটি ও মিটারিং ট্রেন — RMS।',
-      id: 'Regulasi tekanan, keselamatan slam-shut dan rangkaian pengukuran untuk Sundarban Gas Company Ltd (SGCL) — stasiun RMS.',
+      en: 'Pressure regulation, slam-shut safety and metering train for Sundarban Gas Company Ltd (SGCL) — RMS at Notun Bangla Power Plant, Bhola, with operation & maintenance training for SGCL engineers.',
+      bn: 'সুন্দরবন গ্যাস কোম্পানি লিমিটেডের (SGCL) জন্য প্রেশার রেগুলেশন, স্লাম-শাট সেফটি ও মিটারিং ট্রেন — ভোলার নোতুন বাংলা পাওয়ার প্ল্যান্টে RMS, SGCL প্রকৌশলীদের জন্য পরিচালনা ও রক্ষণাবেক্ষণ প্রশিক্ষণসহ।',
+      id: 'Regulasi tekanan, keselamatan slam-shut dan rangkaian pengukuran untuk Sundarban Gas Company Ltd (SGCL) — RMS di Notun Bangla Power Plant, Bhola, dengan pelatihan pengoperasian & pemeliharaan untuk insinyur SGCL.',
     },
   },
 ];

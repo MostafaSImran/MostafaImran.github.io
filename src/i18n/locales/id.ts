@@ -203,6 +203,16 @@ export const id: Content = {
               'Menyusun dan meninjau standar boiler nasional serta mempresentasikan kerangka teknis kepada pemangku kepentingan GIZ, CIOB dan RSC',
             ],
           },
+          {
+            role: 'Pelatihan Pengoperasian & Pemeliharaan RMS',
+            org: 'Sundarban Gas Company Ltd (SGCL)',
+            period: '2026',
+            project: 'Notun Bangla Power Plant, Bhola',
+            points: [
+              'Memberikan pelatihan pengoperasian, pemeliharaan dan keselamatan kepada insinyur SGCL untuk Stasiun Pengatur & Pengukur (RMS) di Notun Bangla Power Plant, Bhola',
+              'Mencakup regulasi tekanan, perangkat keselamatan slam-shut, pengoperasian metering train dan prosedur respons darurat',
+            ],
+          },
         ],
       },
     ],

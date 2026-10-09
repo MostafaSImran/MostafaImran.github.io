@@ -306,6 +306,16 @@ export const experienceDetailConfig: ExperienceDetailConfig = {
             "Drafting and reviewing national boiler standards and presenting technical frameworks to GIZ, CIOB and RSC stakeholders",
           ],
         },
+        {
+          role: "RMS Operation & Maintenance Training",
+          org: "Sundarban Gas Company Ltd (SGCL)",
+          period: "2026",
+          project: "Notun Bangla Power Plant, Bhola",
+          points: [
+            "Delivered operation, maintenance and safety training for SGCL engineers on the Regulator Metering Station (RMS) at Notun Bangla Power Plant, Bhola",
+            "Covered pressure regulation, slam-shut safety devices, metering train operation and emergency response procedures",
+          ],
+        },
       ],
     },
   ],
