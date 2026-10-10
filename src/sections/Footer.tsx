@@ -304,7 +304,7 @@ const Footer = () => {
                 <div className="bg-white rounded-lg px-6 py-4 flex items-center justify-center">
                   <img
                     src="/logo-nobo-shakti-prokushal.png"
-                    alt="Nobo Shakti Prokushal (NSP) — Engineering Consultancy, Bangladesh"
+                    alt="NoboShakti Prokushal (NSP) — Engineering Consultancy, Bangladesh"
                     className="h-14 md:h-16 w-auto object-contain"
                     loading="lazy"
                   />

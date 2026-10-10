@@ -215,7 +215,7 @@ export const articles: Article[] = [
       },
       {
         type: 'p',
-        text: 'At Nobo Shakti Prokushal we have been integrating B31.12 requirements into national boiler and pressure-equipment regulation under the GIZ Bangladesh Boiler Code Development Project. These are the essentials we apply on every hydrogen design review.',
+        text: 'At NoboShakti Prokushal we have been integrating B31.12 requirements into national boiler and pressure-equipment regulation under the GIZ Bangladesh Boiler Code Development Project. These are the essentials we apply on every hydrogen design review.',
       },
       { type: 'h2', text: '1. Material selection is the first line of defence' },
       {

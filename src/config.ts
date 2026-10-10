@@ -49,7 +49,7 @@ export const heroConfig: HeroConfig = {
   backgroundImage: "/hero-bg.webp",
   backgroundAlt: "Industrial power plant with boiler vessels and steel piping at golden hour",
   title: "Mostafa Shawkat Imran",
-  role: "Mechanical Engineer · CEO, Nobo Shakti Prokushal (NSP) · Managing Director, PT Sun Moon Ecosystem",
+  role: "Mechanical Engineer · CEO, NoboShakti Prokushal (NSP) · Managing Director, PT Sun Moon Ecosystem",
   subline:
     "Engineering audits and consultancy for hospitals, factories and infrastructure projects in Bangladesh & Indonesia.",
 };
@@ -63,7 +63,7 @@ export interface NarrativeTextConfig {
 
 export const narrativeTextConfig: NarrativeTextConfig = {
   line1: "20+ years in mechanical engineering.",
-  line2: "Founder of Nobo Shakti Prokushal (NSP).",
+  line2: "Founder of NoboShakti Prokushal (NSP).",
   line3: "Cross-border engineering consultancy in Bangladesh & Indonesia.",
 };
 
@@ -165,7 +165,7 @@ export const zigZagGridConfig: ZigZagGridConfig = {
     {
       id: "nsp",
       title: "Founder, CEO & Principal Consultant",
-      subtitle: "Nobo Shakti Prokushal (NSP) · 2007–Present",
+      subtitle: "NoboShakti Prokushal (NSP) · 2007–Present",
       description:
         "Founded and lead a consultancy specializing in electromechanical systems, fire protection, HVAC and medical gas solutions — from NFPA-99 compliant hospital pipelines to advanced pressure vessels, vacuum tanks and renewable energy systems.",
       image: "/grid-consultancy.webp",
@@ -234,7 +234,7 @@ export const experienceDetailConfig: ExperienceDetailConfig = {
         },
         {
           role: "Founder & Principal Consultant",
-          org: "Nobo Shakti Prokushal (NSP)",
+          org: "NoboShakti Prokushal (NSP)",
           period: "2007 – Present",
           project: "Hospital Engineering Projects",
           points: [
@@ -251,7 +251,7 @@ export const experienceDetailConfig: ExperienceDetailConfig = {
       roles: [
         {
           role: "Founder & Principal Consultant",
-          org: "Nobo Shakti Prokushal (NSP)",
+          org: "NoboShakti Prokushal (NSP)",
           period: "2007 – Present",
           project: "Renewable Energy Projects",
           points: [
@@ -270,7 +270,7 @@ export const experienceDetailConfig: ExperienceDetailConfig = {
       roles: [
         {
           role: "Founder & Principal Consultant",
-          org: "Nobo Shakti Prokushal (NSP)",
+          org: "NoboShakti Prokushal (NSP)",
           period: "2007 – Present",
           project: "Industrial & Commercial Projects",
           points: [

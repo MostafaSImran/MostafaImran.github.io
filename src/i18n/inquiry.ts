@@ -50,9 +50,9 @@ export const inquiryUi = {
   messageIntro: L('New website inquiry', 'ওয়েবসাইট থেকে নতুন অনুসন্ধান', 'Permintaan baru dari situs web'),
   /** Automatic reply sent to the visitor by the form backend (FormSubmit _autoresponse). */
   autoresponse: L(
-    'Thank you for contacting Mostafa Shawkat Imran — Nobo Shakti Prokushal (NSP), Dhaka & PT Sun Moon Ecosystem, Jakarta. Your inquiry has been received, and we will get back to you within 1–2 business days.',
-    'মোস্তফা শওকত ইমরানের সাথে যোগাযোগ করার জন্য ধন্যবাদ — নব শক্তি প্রকৌশল (NSP), ঢাকা ও পিটি সান মুন ইকোসিস্টেম, জাকার্তা। আপনার অনুসন্ধান পেয়েছি; আমরা ১–২ কর্মদিবসের মধ্যে উত্তর দেব।',
-    'Terima kasih telah menghubungi Mostafa Shawkat Imran — Nobo Shakti Prokushal (NSP), Dhaka & PT Sun Moon Ecosystem, Jakarta. Permintaan Anda telah kami terima dan akan kami balas dalam 1–2 hari kerja.'
+    'Thank you for contacting Mostafa Shawkat Imran — NoboShakti Prokushal (NSP), Dhaka & PT Sun Moon Ecosystem, Jakarta. Your inquiry has been received, and we will get back to you within 1–2 business days.',
+    'মোস্তফা শওকত ইমরানের সাথে যোগাযোগ করার জন্য ধন্যবাদ — নবশক্তি প্রকৌশল (NSP), ঢাকা ও পিটি সান মুন ইকোসিস্টেম, জাকার্তা। আপনার অনুসন্ধান পেয়েছি; আমরা ১–২ কর্মদিবসের মধ্যে উত্তর দেব।',
+    'Terima kasih telah menghubungi Mostafa Shawkat Imran — NoboShakti Prokushal (NSP), Dhaka & PT Sun Moon Ecosystem, Jakarta. Permintaan Anda telah kami terima dan akan kami balas dalam 1–2 hari kerja.'
   ),
   /** Toast shown when the visitor returns from the form backend after sending. */
   sentToast: L(

@@ -7,9 +7,9 @@ const ui = {
   label: L('Our Engineering Company', 'আমাদের প্রকৌশল প্রতিষ্ঠান', 'Perusahaan Teknik Kami'),
   title: L('Products & Fabrication — Now at NSP', 'পণ্য ও ফেব্রিকেশন — এখন NSP-তে', 'Produk & Fabrikasi — Kini di NSP'),
   body: L(
-    'Capsule homes, sound pods, bus bodies and solar systems are designed, fabricated and sold by Nobo Shakti Prokushal (NSP) — the engineering company founded and led by Mostafa Shawkat Imran. Visit the NSP website for product details, photo galleries and to send your inquiry.',
+    'Capsule homes, sound pods, bus bodies and solar systems are designed, fabricated and sold by NoboShakti Prokushal (NSP) — the engineering company founded and led by Mostafa Shawkat Imran. Visit the NSP website for product details, photo galleries and to send your inquiry.',
     'ক্যাপসুল হোম, সাউন্ড পড, বাস বডি এবং সোলার সিস্টেম মোস্তাফা শওকত ইমরান প্রতিষ্ঠিত ও পরিচালিত প্রকৌশল প্রতিষ্ঠান নবশক্তি প্রকৌশল (NSP)-র মাধ্যমে ডিজাইন, নির্মাণ ও বিক্রয় করা হয়। পণ্যের বিবরণ, ছবির গ্যালারি এবং অনুসন্ধান পাঠাতে NSP-র ওয়েবসাইট দেখুন।',
-    'Kapsul home, sound pod, bodi bus, dan sistem tenaga surya dirancang, diproduksi, dan dijual oleh Nobo Shakti Prokushal (NSP) — perusahaan teknik yang didirikan dan dipimpin oleh Mostafa Shawkat Imran. Kunjungi situs NSP untuk detail produk, galeri foto, dan mengirim pertanyaan.'
+    'Kapsul home, sound pod, bodi bus, dan sistem tenaga surya dirancang, diproduksi, dan dijual oleh NoboShakti Prokushal (NSP) — perusahaan teknik yang didirikan dan dipimpin oleh Mostafa Shawkat Imran. Kunjungi situs NSP untuk detail produk, galeri foto, dan mengirim pertanyaan.'
   ),
   cta: L('Visit the NSP Website', 'NSP ওয়েবসাইট দেখুন', 'Kunjungi Situs NSP'),
   note: L('noboshaktiprokushal.com', 'noboshaktiprokushal.com', 'noboshaktiprokushal.com'),

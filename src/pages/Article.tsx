@@ -167,7 +167,7 @@ const ArticlePage = () => {
           <h2 className="font-display text-2xl text-kaleo-earth mt-3">Mostafa Shawkat Imran</h2>
           <p className="font-body text-sm text-kaleo-earth/65 leading-relaxed mt-3">
             Mechanical Engineer (RUET) and MBA (AUST) — Fellow of IEB, member of ASME, NFPA and IEOM.
-            CEO of Nobo Shakti Prokushal (NSP), Dhaka and Managing Director of PT Sun Moon Ecosystem, Jakarta.
+            CEO of NoboShakti Prokushal (NSP), Dhaka and Managing Director of PT Sun Moon Ecosystem, Jakarta.
             Two decades of practice across boilers, pressure vessels, hydrogen piping, medical gas systems and
             healthcare MEP validation.
           </p>
@@ -202,7 +202,7 @@ const ArticlePage = () => {
         </div>
 
         <p className="mt-12 text-center font-body text-xs text-kaleo-earth/40">
-          © 2026 Mostafa Shawkat Imran · Nobo Shakti Prokushal (NSP) · PT Sun Moon Ecosystem
+          © 2026 Mostafa Shawkat Imran · NoboShakti Prokushal (NSP) · PT Sun Moon Ecosystem
         </p>
       </main>
 

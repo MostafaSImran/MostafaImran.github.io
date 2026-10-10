@@ -23,13 +23,13 @@ export const id: Content = {
     backgroundImage: '/hero-bg.webp',
     backgroundAlt: 'Pembangkit listrik industri dengan bejana boiler dan perpipaan baja pada golden hour',
     title: 'Mostafa Shawkat Imran',
-    role: 'Insinyur Mekanikal · CEO, Nobo Shakti Prokushal (NSP) · Direktur Utama, PT Sun Moon Ecosystem',
+    role: 'Insinyur Mekanikal · CEO, NoboShakti Prokushal (NSP) · Direktur Utama, PT Sun Moon Ecosystem',
     subline:
       'Audit rekayasa dan konsultansi untuk rumah sakit, pabrik, dan proyek infrastruktur di Bangladesh & Indonesia.',
   },
   narrative: {
     line1: '20+ tahun di teknik mesin.',
-    line2: 'Pendiri Nobo Shakti Prokushal (NSP).',
+    line2: 'Pendiri NoboShakti Prokushal (NSP).',
     line3: 'Konsultansi rekayasa lintas batas di Bangladesh & Indonesia.',
   },
   cards: {
@@ -87,7 +87,7 @@ export const id: Content = {
       {
         id: 'nsp',
         title: 'Pendiri, CEO & Konsultan Utama',
-        subtitle: 'Nobo Shakti Prokushal (NSP) · 2007–Sekarang',
+        subtitle: 'NoboShakti Prokushal (NSP) · 2007–Sekarang',
         description:
           'Mendirikan dan memimpin firma konsultan yang berspesialisasi dalam sistem elektromekanikal, fire protection, HVAC dan solusi gas medis — dari perpipaan rumah sakit sesuai NFPA-99 hingga pressure vessel modern, tangki vakum dan sistem energi terbarukan.',
         image: '/grid-consultancy.webp',
@@ -132,7 +132,7 @@ export const id: Content = {
           },
           {
             role: 'Pendiri & Konsultan Principal',
-            org: 'Nobo Shakti Prokushal (NSP)',
+            org: 'NoboShakti Prokushal (NSP)',
             period: '2007 – Sekarang',
             project: 'Proyek Rekayasa Rumah Sakit',
             points: [
@@ -149,7 +149,7 @@ export const id: Content = {
         roles: [
           {
             role: 'Pendiri & Konsultan Principal',
-            org: 'Nobo Shakti Prokushal (NSP)',
+            org: 'NoboShakti Prokushal (NSP)',
             period: '2007 – Sekarang',
             project: 'Proyek Energi Terbarukan',
             points: [
@@ -168,7 +168,7 @@ export const id: Content = {
         roles: [
           {
             role: 'Pendiri & Konsultan Principal',
-            org: 'Nobo Shakti Prokushal (NSP)',
+            org: 'NoboShakti Prokushal (NSP)',
             period: '2007 – Sekarang',
             project: 'Proyek Industri & Komersial',
             points: [
